@@ -1,10 +1,10 @@
-# USE CASE: <number> <the name should be the goal as a short active verb phrase>
+# USE CASE: 2  
 
 ## CHARACTERISTIC INFORMATION
 
 ### Goal in Context
 
-*a longer statement of the goal, if needed*
+As an Organization I want to produce a report on all the countries in a continent organised by largest population to smallest so that population information is easy to access
 
 ### Scope
 
