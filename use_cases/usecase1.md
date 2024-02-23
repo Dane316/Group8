@@ -16,7 +16,7 @@ Primary task
 
 ### Preconditions
 
-Database contains a list of all contries and their population data
+Database contains a list of all countries and their population data
 
 ### Success End Condition
 
