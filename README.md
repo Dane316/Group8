@@ -6,7 +6,18 @@
 | Module title | Software Engineering Methods |
 | Group | 8 |
 | Group Members | Amy Joyeux, Jaslyn Lopez, Dane Martin, Martin Mukange, Kenyon Octave, Nickeisha Porter |
- testing the new workflow
+
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/Dane316/Group8/main.yml?branch=master)
+[![LICENSE](https://img.shields.io/github/license/4Dane316/Group8.svg?style=flat-square)](https://github.com/Dane316/Group8/blob/master/LICENSE)
+[![Releases](https://img.shields.io/github/release/Dane316/Group8/all.svg?style=flat-square)](https://github.com/Dane316/Group8/releases)
+# Software Engineering Methods
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/Dane316/Group8/main.yml?branch=develop)
+
+# Software Engineering Methods
+* Master Build Status ![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/Dane316/Group8/main.yml?branch=master)
+* Develop Branch Status ![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/Dane316/Group8/main.yml?branch=develop)
+* License [![LICENSE](https://img.shields.io/github/license/Dane316/Group8.svg?style=flat-square)](https://github.com/Dane316/Group8/blob/master/LICENSE)
+* Release [![Releases](https://img.shields.io/github/release/Dane316/Group8/all.svg?style=flat-square)](https://github.com/Dane316/Group8/releases)
  
 
 
