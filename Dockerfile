@@ -1,5 +1,5 @@
 FROM openjdk:latest
-COPY ./target/classes/com /tmp/com
+COPY ./target/classes/cw /tmp/cw
 WORKDIR /tmp
 ENTRYPOINT ["java", "cw.group8.App"]
 
