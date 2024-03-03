@@ -73,7 +73,7 @@ public class App
      * Gets all the current employees and salaries.
      * @return A list of all employees and salaries, or null if there is an error.
      */
-    /*public ArrayList<Employee> getAllSalaries()
+    public ArrayList<Employee> getAllSalaries()
     {
         try
         {
@@ -106,12 +106,12 @@ public class App
             System.out.println("Failed to get salary details");
             return null;
         }
-    }*/
+    }
     /**
      * Prints a list of employees.
      * @param employees The list of employees to print.
      */
-    /*public void printSalaries(ArrayList<Employee> employees)
+    public void printSalaries(ArrayList<Employee> employees)
     {
         // Print header
         System.out.println(String.format("%-10s %-15s %-20s %-8s", "Emp No", "First Name", "Last Name", "Salary"));
@@ -123,7 +123,7 @@ public class App
                             emp.emp_no, emp.first_name, emp.last_name, emp.salary);
             System.out.println(emp_string);
         }
-    }*/
+    }
     public static void main(String[] args)
     {
         // Create new Application
