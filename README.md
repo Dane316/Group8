@@ -7,11 +7,37 @@
 | Group | 8 |
 | Group Members | Amy Joyeux, Jaslyn Lopez, Dane Martin, Martin Mukange, Kenyon Octave, Nickeisha Porter |
 
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/Dane316/Group8/main.yml?branch=master)
+[![LICENSE](https://img.shields.io/github/license/4Dane316/Group8.svg?style=flat-square)](https://github.com/Dane316/Group8/blob/master/LICENSE)
+[![Releases](https://img.shields.io/github/release/Dane316/Group8/all.svg?style=flat-square)](https://github.com/Dane316/Group8/releases)
+# Software Engineering Methods
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/Dane316/Group8/main.yml?branch=develop)
+
+# Software Engineering Methods
+* Master Build Status ![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/Dane316/Group8/main.yml?branch=master)
+* Develop Branch Status ![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/Dane316/Group8/main.yml?branch=develop)
+* License [![LICENSE](https://img.shields.io/github/license/Dane316/Group8.svg?style=flat-square)](https://github.com/Dane316/Group8/blob/master/LICENSE)
+* Release [![Releases](https://img.shields.io/github/release/Dane316/Group8/all.svg?style=flat-square)](https://github.com/Dane316/Group8/releases)
  
 
 
 ### User Stories
-
+1. As an Organization I want to produce a report on all the countries in the world organised by largest population to smallest so that this population information is easy to access.
+2. As an Organization I want to produce a report on all the countries in a continent organised by largest population to smallest so that this population information is easy to access.
+3. As an Organization I want to produce a report on all the countries in a region organised by largest population to smallest so that this population information is easy to access.
+4. As an Organization I want to produce a report on the top N populated countries in the world where N is provided by the user so that this population information is easy to access.
+5. As an Organization I want to produce a report on the top N populated countries in a continent where N is provided by the user so that this population information is easy to access.
+6. As an Organization I want to produce a report on the top N populated countries in a region where N is provided by the user so that this population information is easy to access.
+7. As an Organization I want to produce a report on all the cities in the world organised by largest population to smallest so that this population information is easy to access.
+8. As an Organization I want to produce a report on all the cities in a continent organised by largest population to smallest so that this population information is easy to access.
+9. As an Organization I want to produce a report on all the cities in a region organised by largest population to smallest so that this population information is easy to access.
+10. As an Organization I want to produce a report on all the cities in a country organised by largest population to smallest so that this population information is easy to access.
+11. As an Organization I want to produce a report on all the cities in a district organised by largest population to smallest so that this population information is easy to access.
+12. As an Organization I want to produce a report on the top N populated cities in the world where N is provided by the user so that this population information is easy to access.
+13. As an Organization I want to produce a report on the top N populated cities in a continent where N is provided by the user so that this population information is easy to access.
+14. As an Organization I want to produce a report on the top N populated cities in a region where N is provided by the user so that this population information is easy to access.
+15. As an Organization I want to produce a report on the top N populated cities in a country where N is provided by the user so that this population information is easy to access.
+16. As an Organization I want to produce a report on the top N populated cities in a district where N is provided by the user so that this population information is easy to access.
 17. As an Organization I want to produce a report on all the capital cities in the world organised by largest population to smallest so that this population information is easy to access.
 18. As an Organization I want to produce a report on all the capital cities in a continent organised by largest population to smallest so that this population information is easy to access.
 19. As an Organization I want to produce a report on all the capital cities in a region organised by largest to smallest so that this population information is easy to access.
