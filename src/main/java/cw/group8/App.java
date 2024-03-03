@@ -70,10 +70,11 @@ public class App
         }
     }
     /**
-     * Gets all the current employees and salaries.
-     * @return A list of all employees and salaries, or null if there is an error.
+     * Gets all the cities in the table as a test.
+     *
+     * @return A list of all the cities in the table, or null if there is an error.
      */
-    public ArrayList<Employee> getAllSalaries()
+    public ArrayList<city> getAllCities()
     {
         try
         {
@@ -81,46 +82,41 @@ public class App
             Statement stmt = con.createStatement();
             // Create string for SQL statement
             String strSelect =
-                    "SELECT employees.emp_no, employees.first_name, employees.last_name, salaries.salary "
-                            + "FROM employees, salaries "
-                            + "WHERE employees.emp_no = salaries.emp_no AND salaries.to_date = '9999-01-01' "
-                            + "ORDER BY employees.emp_no ASC";
+                    "SELECT name, district FROM city";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
-            // Extract employee information
-            ArrayList<Employee> employees = new ArrayList<Employee>();
+            // Extract city information
+            ArrayList<city> cities = new ArrayList<city>();
             while (rset.next())
             {
-                Employee emp = new Employee();
-                emp.emp_no = rset.getInt("employees.emp_no");
-                emp.first_name = rset.getString("employees.first_name");
-                emp.last_name = rset.getString("employees.last_name");
-                emp.salary = rset.getInt("salaries.salary");
-                employees.add(emp);
+                city emp = new city();
+                emp.name = rset.getString("city.name");
+                emp.district = rset.getString("city.district");
+                cities.add(emp);
             }
-            return employees;
+            return cities;
         }
         catch (Exception e)
         {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get salary details");
+            System.out.println("Failed to get city details");
             return null;
         }
     }
     /**
-     * Prints a list of employees.
-     * @param employees The list of employees to print.
+     * Prints a list of cities.
+     * @param cities The list of cities to print.
      */
-    public void printSalaries(ArrayList<Employee> employees)
+    public void printCities(ArrayList<city> cities)
     {
         // Print header
-        System.out.println(String.format("%-10s %-15s %-20s %-8s", "Emp No", "First Name", "Last Name", "Salary"));
-        // Loop over all employees in the list
-        for (Employee emp : employees)
+        System.out.println(String.format("%-10s %-15s", "Name", "District"));
+        // Loop over all cities in the list
+        for (city emp : cities)
         {
             String emp_string =
-                    String.format("%-10s %-15s %-20s %-8s",
-                            emp.emp_no, emp.first_name, emp.last_name, emp.salary);
+                    String.format("%-10s %-15s",
+                            emp.name, emp.district);
             System.out.println(emp_string);
         }
     }
@@ -132,14 +128,14 @@ public class App
         // Connect to database
         a.connect();
 
-        // Extract employee salary information
-        //ArrayList<Employee> employees = a.getAllSalaries();
+        // Extract city information
+        ArrayList<city> cities = a.getAllCities();
 
-        // Print the salaries for the employees
-        //a.printSalaries(employees);
+        // Print the cities in the table
+        a.printCities(cities);
 
         // Test the size of the returned data - should be 240124
-        //System.out.println(employees.size());
+        //System.out.println(cities.size());
 
         // Disconnect from database
         a.disconnect();

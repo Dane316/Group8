@@ -1,6 +1,6 @@
 package cw.group8;
 
-public class Country {
+public class country {
 
 /**
  * It's the Country Code

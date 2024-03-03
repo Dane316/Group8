@@ -1,6 +1,6 @@
 package cw.group8;
 
-public class City {
+public class city {
 
     /**
      * Name
