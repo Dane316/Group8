@@ -70,11 +70,11 @@ public class App
         }
     }
     /**
-     * Gets all the cities in the table as a test.
+     * Gets all the countries in the table as a test.
      *
-     * @return A list of all the cities in the table, or null if there is an error.
+     * @return A list of all the countries in the table, or null if there is an error.
      */
-    public ArrayList<city> getAllCities()
+    public ArrayList<country> getAllcountries()
     {
         try
         {
@@ -82,41 +82,41 @@ public class App
             Statement stmt = con.createStatement();
             // Create string for SQL statement
             String strSelect =
-                    "SELECT name, district FROM city";
+                    "SELECT name, population FROM country ORDER BY Population DESC";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
-            // Extract city information
-            ArrayList<city> cities = new ArrayList<city>();
+            // Extract country information
+            ArrayList<country> countries = new ArrayList<country>();
             while (rset.next())
             {
-                city emp = new city();
-                emp.name = rset.getString("city.name");
-                emp.district = rset.getString("city.district");
-                cities.add(emp);
+                country emp = new country();
+                emp.name = rset.getString("country.name");
+                emp.population = rset.getInt("country.population");
+                countries.add(emp);
             }
-            return cities;
+            return countries;
         }
         catch (Exception e)
         {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get city details");
+            System.out.println("Failed to get country details");
             return null;
         }
     }
     /**
-     * Prints a list of cities.
-     * @param cities The list of cities to print.
+     * Prints a list of countries.
+     * @param countries The list of countries to print.
      */
-    public void printCities(ArrayList<city> cities)
+    public void printCountries(ArrayList<country> countries)
     {
         // Print header
-        System.out.println(String.format("%-10s %-15s", "Name", "District"));
-        // Loop over all cities in the list
-        for (city emp : cities)
+        System.out.printf("%-10s %-15s%n","Name", "Population");
+        // Loop over all countries in the list
+        for (country emp : countries)
         {
             String emp_string =
                     String.format("%-10s %-15s",
-                            emp.name, emp.district);
+                            emp.name, emp.population);
             System.out.println(emp_string);
         }
     }
@@ -128,14 +128,14 @@ public class App
         // Connect to database
         a.connect();
 
-        // Extract city information
-        ArrayList<city> cities = a.getAllCities();
+        // Extract country information
+        ArrayList<country> countries = a.getAllcountries();
 
-        // Print the cities in the table
-        a.printCities(cities);
+        // Print the countries in the table
+        a.printCountries(countries);
 
         // Test the size of the returned data - should be 240124
-        //System.out.println(cities.size());
+        //System.out.println(countries.size());
 
         // Disconnect from database
         a.disconnect();
