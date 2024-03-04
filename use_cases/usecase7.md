@@ -1,59 +1,55 @@
-# USE CASE: <number> <the name should be the goal as a short active verb phrase>
+# USE CASE: 7   Produce a report on all the cities in the world organised by largest population to smallest
 
 ## CHARACTERISTIC INFORMATION
 
 ### Goal in Context
 
-*a longer statement of the goal, if needed*
+As an Organization I want to produce a report on all the cities in the world organised by largest population to smallest so that this population information is easy to access
 
 ### Scope
 
-*what system is considered black-box under design*
+Organization
 
 ### Level
 
-*one of: Summary, Primary task, subfunction*
+Primary task
 
 ### Preconditions
 
-*what we expect is already the state of the world*
+Database contains a list of all cities in world and their population data
 
 ### Success End Condition
 
-*the state of the world upon successful completion*
+A report on all the cities in the world organised by largest population to smallest is generated
 
 ### Failed End Condition
 
-*the state of the world if goal abandoned*
+No report is produced
 
 ### Primary Actor
 
-*a role name for the primary actor, or description*
+User in the organization
 
 ### Trigger
 
-*the action upon the system that starts the use case, may be a time event*
+A user in the organization requests all the cities in the world organised by largest population to smallest
 
 ## MAIN SUCCESS SCENARIO
+1. User access system
+2. User selects city report option
+3. Report of all the cities in the world organised by largest population to smallest is generated
+4. User extracts population information all the cities in the world organised by largest population to smallest
 
-*put here the steps of the scenario from trigger to goal delivery, and any cleanup after*
-
-1. action description
 
 ## EXTENSIONS
+2. User wants to generate a different report
+   2a. Return to step 1
 
-*put here the extensions, one at a time, each referring to the step of the main scenario*
-
-1. **Condition**: action of sub use case
 
 ## SUB-VARIATIONS
 
-*put here the sub-variations that will cause eventual branching in the scenario
-
-1. list of sub-variations
+None
 
 ## SCHEDULE
 
-**DUE DATE**: *date or release of deployment*
-
-*any other schedule/staffing information you need*
+**DUE DATE**: Release 1.0
