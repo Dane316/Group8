@@ -82,7 +82,7 @@ public class App
             Statement stmt = con.createStatement();
             // Create string for SQL statement
             String strSelect =
-                    "SELECT name, Population FROM country WHERE region = 'caribbean' ORDER BY Population DESC LIMIT 10";
+                    "SELECT Name, Population FROM country WHERE Continent = 'north america' ORDER BY Population DESC";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
             // Extract country information
@@ -110,7 +110,6 @@ public class App
     public void printCountries(ArrayList<country> countries)
     {
         // Print header
-        System.out.printf("The top 10 populated countries in the Caribbean.\n");
         System.out.printf("%-10s %-15s%n","Name", "Population");
         // Loop over all countries in the list
         for (country emp : countries)
