@@ -8,7 +8,7 @@ As an Organization I want to produce a report on all the countries in the world 
 
 ### Scope
 
-Organization
+Company
 
 ### Level
 
@@ -32,24 +32,28 @@ User in the organization
 
 ### Trigger
 
-A user in the organization requests country population 
+*the action upon the system that starts the use case, may be a time event*
 
 ## MAIN SUCCESS SCENARIO
-1. User access system
-2. User selects country report option 
-3. User request country population organised by largest population to smallest
-4. User extracts information for country population organised by largest population to smallest
 
+
+
+1. action description
 
 ## EXTENSIONS
-2. User wants to generate a different report
-    2a. Return to step 1
 
+*put here the extensions, one at a time, each referring to the step of the main scenario*
+
+1. **Condition**: action of sub use case
 
 ## SUB-VARIATIONS
 
-None
+*put here the sub-variations that will cause eventual branching in the scenario
+
+1. list of sub-variations
 
 ## SCHEDULE
 
-**DUE DATE**: Release 1.0
+**DUE DATE**: *date or release of deployment*
+
+*any other schedule/staffing information you need*
