@@ -103,7 +103,7 @@ public class App
             Statement stmt = con.createStatement();
             // Create string for SQL statement
             String strSelect =
-                    "SELECT Code, Name, Population FROM country WHERE Continent = 'asia' ORDER BY Population DESC LIMIT 10";
+                    "SELECT Name, Population FROM country WHERE Continent = 'asia' ORDER BY Population DESC LIMIT 10";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
             // Extract country information
