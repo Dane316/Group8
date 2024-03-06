@@ -70,9 +70,9 @@ public class App
         }
     }
     /**
-     * Gets all the countries in the table as a test.
+     * Gets all the countries in the world organised by largest population to smallest.
      *
-     * @return A list of all the countries in the table, or null if there is an error.
+     * @return A list of all the countries in the world, or null if there is an error.
      */
     public ArrayList<country> getAllcountries()
     {
@@ -110,6 +110,7 @@ public class App
     public void printCountries(ArrayList<country> countries)
     {
         // Print header
+        System.out.printf("All the countries in the world organised by largest population to smallest.");
         System.out.printf("%-10s %-15s%n","Name", "Population");
         // Loop over all countries in the list
         for (country emp : countries)
