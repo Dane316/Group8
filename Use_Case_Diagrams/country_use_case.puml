@@ -1,0 +1,52 @@
+@startuml
+
+left to right direction
+actor user as "User in Organization"
+
+rectangle Database
+
+rectangle "World Population System" {
+
+    usecase UC1 as "Countries in the world organised by
+    largest population to smallest"
+
+    usecase UC2 as "Countries in a continent organised by
+    largest population to smallest"
+
+    usecase UC3 as "Countries in a region organised by
+    largest population to smallest"
+
+    usecase UC4 as "Top N populated countries in the world
+    where N is provided by the user"
+
+    usecase UC5 as "Top N populated countries in a
+    continent where N is provided by the user"
+
+    usecase UC6 as "Top N populated countries in a
+    region where N is provided by the user"
+
+    usecase UCa as "Display results"
+
+    user ---UC1
+    user ---UC2
+    user ---UC3
+    user ---UC4
+    user ---UC5
+    user ---UC6
+
+    UC1 ----Database
+    UC2 ----Database
+    UC3 ----Database
+    UC4 ----Database
+    UC5 ----Database
+    UC6 ----Database
+
+       UC1 --.> UCa : include
+       UC2 --.> UCa : include
+       UC3 --.> UCa : include
+       UC4 --.> UCa : include
+       UC5 --.> UCa : include
+       UC6 --.> UCa : include
+}
+
+@enduml
