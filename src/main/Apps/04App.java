@@ -70,7 +70,7 @@ public class App
         }
     }
     /**
-     * Gets all the countries in the table as a test.
+     * Gets the top 10 populated countries in the world.
      *
      * @return A list of all the countries in the table, or null if there is an error.
      */
@@ -110,7 +110,7 @@ public class App
     public void printCountries(ArrayList<country> countries)
     {
         // Print header
-        System.out.printf("The top N populated countries in the world where N is provided by the user.\n");
+        System.out.printf("The top 10 populated countries in the world.\n");
         System.out.printf("%-10s %-15s%n","Name", "Population");
         // Loop over all countries in the list
         for (country emp : countries)
