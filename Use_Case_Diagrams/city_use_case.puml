@@ -1,0 +1,79 @@
+@startuml
+
+left to right direction
+actor user as "User in Organization"
+
+rectangle Database
+
+rectangle "World Population System" {
+
+    usecase UC07 as "Cities in the world organised by
+    largest population to smallest"
+
+    usecase UC08 as "Cities in a continent organised by
+    largest population to smallest"
+
+    usecase UC09 as "Cities in a region organised by
+    largest population to smallest"
+
+    usecase UC10 as "Cities in a country organised by
+    largest population to smallest"
+
+    usecase UC11 as "Cities in a district organised by
+    largest population to smallest"
+
+    usecase UC12 as "top N populated cities in the
+    world where N is provided by the user"
+
+    usecase UC13 as "top N populated cities in a
+    continent where N is provided by the user"
+
+    usecase UC14 as "top N populated cities in the
+    world where N is provided by the user"
+
+    usecase UC15 as "top N populated cities in a
+    region where N is provided by the user"
+
+    usecase UC16 as "top N populated cities in a
+    country where N is provided by the user"
+
+
+    usecase UCa as "Display results"
+
+    user ---UC07
+    user ---UC08
+    user ---UC09
+    user ---UC10
+    user ---UC11
+    user ---UC12
+    user ---UC13
+    user ---UC14
+    user ---UC15
+    user ---UC16
+
+
+
+    UC07 ----Database
+    UC08 ----Database
+    UC09 ----Database
+    UC10 ----Database
+    UC11 ----Database
+    UC12 ----Database
+    UC13 ----Database
+    UC14 ----Database
+    UC15 ----Database
+    UC16 ----Database
+
+       UC07 --.> UCa : include
+       UC08 --.> UCa : include
+       UC09 --.> UCa : include
+       UC10 --.> UCa : include
+       UC11 --.> UCa : include
+       UC12 --.> UCa : include
+       UC13 --.> UCa : include
+       UC14 --.> UCa : include
+       UC15 --.> UCa : include
+       UC16 --.> UCa : include
+}
+
+@enduml
