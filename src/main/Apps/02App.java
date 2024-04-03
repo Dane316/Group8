@@ -110,7 +110,7 @@ public class App
     public void printCountries(ArrayList<country> countries)
     {
         // Print header
-        System.out.printf("All the countries in North America organised by largest population to smallest.");
+        System.out.printf("All the countries in North America organised by largest population to smallest.\n");
         System.out.printf("%-10s %-15s%n","Name", "Population");
         // Loop over all countries in the list
         for (country emp : countries)

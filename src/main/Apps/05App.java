@@ -5,6 +5,27 @@ import java.util.ArrayList;
 
 public class App
 {
+    public static void main(String[] args)
+    {
+        // Create new Application
+        App a = new App();
+
+        // Connect to database
+        a.connect();
+
+        // Extract country information
+        ArrayList<country> countries = a.getAllcountries();
+
+        // Print the countries in the table
+        a.printCountries(countries);
+
+        // Test the size of the returned data - should be 240124
+        //System.out.println(countries.size());
+
+        // Disconnect from database
+        a.disconnect();
+    }
+
     /**
      * Connection to MySQL database.
      */
@@ -70,9 +91,9 @@ public class App
         }
     }
     /**
-     * Gets all the countries in the Caribbean region organised by largest population to smallest.
+     * Gets the top 10 populated countries in Asia.
      *
-     * @return A list of all the countries in the Caribbean, or null if there is an error.
+     * @return A list of all the countries in the table, or null if there is an error.
      */
     public ArrayList<country> getAllcountries()
     {
@@ -82,7 +103,7 @@ public class App
             Statement stmt = con.createStatement();
             // Create string for SQL statement
             String strSelect =
-                    "SELECT name, Population FROM country WHERE Region = 'caribbean' ORDER BY Population DESC";
+                    "SELECT Name, Population FROM country WHERE Continent = 'asia' ORDER BY Population DESC LIMIT 10";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
             // Extract country information
@@ -110,7 +131,7 @@ public class App
     public void printCountries(ArrayList<country> countries)
     {
         // Print header
-        System.out.printf("All the countries in the Caribbean region organised by largest population to smallest.\n");
+        System.out.printf("The top 10 populated countries in Asia.\n");
         System.out.printf("%-10s %-15s%n","Name", "Population");
         // Loop over all countries in the list
         for (country emp : countries)
@@ -121,7 +142,7 @@ public class App
             System.out.println(emp_string);
         }
     }
-    public static void main(String[] args)
+    /*public static void main(String[] args)
     {
         // Create new Application
         App a = new App();
@@ -140,5 +161,5 @@ public class App
 
         // Disconnect from database
         a.disconnect();
-    }
+    }*/
 }
