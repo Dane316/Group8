@@ -8,14 +8,15 @@
 | Group Members | Amy Joyeux, Jaslyn Lopez, Dane Martin, Martin Mukange, Kenyon Octave, Nickeisha Porter |
 
 
+
 |ID|Name|Met|Screenshot|
 |:----|:----|:----|:----|
-|08|All the countries in the world organised by largest population to smallest.|Yes| |
-|09|All the countries in a continent organised by largest population to smallest.|Yes| |
-|10|All the countries in a region organised by largest population to smallest.|Yes| |
-|11|The top N populated countries in the world where N is provided by the user.|Yes| |
-|12|The top N populated countries in a continent where N is provided by the user.|Yes| |
-|13|The top N populated countries in a region where N is provided by the user.|Yes| |
+|08|All the countries in the world organised by largest population to smallest.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/08_Countries_by_large-small.png|
+|09|All the countries in a continent organised by largest population to smallest.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/09_Countries_by_continent_large-small.png|
+|10|All the countries in a region organised by largest population to smallest.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/10_Countries_by_region_large-small.png|
+|11|The top N populated countries in the world where N is provided by the user.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/11_Top_countries.png|
+|12|The top N populated countries in a continent where N is provided by the user.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/12_Top_countries_in_continent.png|
+|13|The top N populated countries in a region where N is provided by the user.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/13_Top_countries_in_caribbean.png|
 |14|All the cities in the world organised by largest population to smallest.| | |
 |15|All the cities in a continent organised by largest population to smallest.| | |
 |16|All the cities in a region organised by largest population to smallest.| | |
@@ -50,3 +51,4 @@
 | |Hindi| | |
 | |Spanish| | |
 | |Arabic| | |
+
