@@ -91,7 +91,7 @@ public class App
         }
     }
     /**
-     * Gets all the cities in the district of Noord-Brabant organised by largest population to smallest.
+     * Gets all the cities in the continent of North America organised by largest population to smallest.
      *
      * @return A list of all the cites in the table, or null if there is an error.
      */
@@ -105,7 +105,8 @@ public class App
             String strSelect =
                     "SELECT city.Name, city.Population\n" +
                     "FROM city\n" +
-                    "WHERE city.District = 'Noord-Brabant'\n" +
+                    "INNER JOIN country ON city.CountryCode = country.Code\n" +
+                    "WHERE country.Continent = 'North America'\n" +
                     "ORDER BY city.Population DESC;";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
@@ -134,7 +135,7 @@ public class App
     public void printCities(ArrayList<city> cities)
     {
         // Print header
-        System.out.printf("All the cities in the district of Noord-Brabant by largest population to smallest.\n");
+        System.out.printf("All the cities in the continent of North America by largest population to smallest.\n");
         System.out.printf("%-10s %-15s%n","Name", "Population");
         // Loop over all cities in the list
         for (city emp : cities)
