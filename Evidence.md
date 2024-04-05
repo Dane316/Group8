@@ -8,7 +8,6 @@
 | Group Members | Amy Joyeux, Jaslyn Lopez, Dane Martin, Martin Mukange, Kenyon Octave, Nickeisha Porter |
 
 
-
 |ID|Name|Met|Screenshot|
 |:----|:----|:----|:----|
 |08|All the countries in the world organised by largest population to smallest.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/08_Countries_by_large-small.png|
@@ -17,11 +16,11 @@
 |11|The top N populated countries in the world where N is provided by the user.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/11_Top_countries.png|
 |12|The top N populated countries in a continent where N is provided by the user.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/12_Top_countries_in_continent.png|
 |13|The top N populated countries in a region where N is provided by the user.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/13_Top_countries_in_caribbean.png|
-|14|All the cities in the world organised by largest population to smallest.| | |
-|15|All the cities in a continent organised by largest population to smallest.| | |
-|16|All the cities in a region organised by largest population to smallest.| | |
-|17|All the cities in a country organised by largest population to smallest.| | |
-|18|All the cities in a district organised by largest population to smallest.| | |
+|14|All the cities in the world organised by largest population to smallest.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/14_All_the_cities_in_the_world.png|
+|15|All the cities in a continent organised by largest population to smallest.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/15_Cities_in_continent_North_America.png|
+|16|All the cities in a region organised by largest population to smallest.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/16_All_cities_Caribbean_region.png|
+|17|All the cities in a country organised by largest population to smallest.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/17_All_cities_in_country.png|
+|18|All the cities in a district organised by largest population to smallest.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/18_All_cities_in_district.png|
 |19|The top N populated cities in the world where N is provided by the user.| | |
 |20|The top N populated cities in a continent where N is provided by the user.| | |
 |21|The top N populated cities in a region where N is provided by the user.| | |
@@ -51,4 +50,3 @@
 | |Hindi| | |
 | |Spanish| | |
 | |Arabic| | |
-
