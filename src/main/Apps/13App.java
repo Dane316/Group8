@@ -91,7 +91,7 @@ public class App
         }
     }
     /**
-     * Gets the top 10 populated countries in Asia.
+     * Gets the top 10 populated countries in the Caribbean region.
      *
      * @return A list of all the countries in the table, or null if there is an error.
      */
