@@ -21,11 +21,11 @@
 |16|All the cities in a region organised by largest population to smallest.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/16_All_cities_Caribbean_region.png|
 |17|All the cities in a country organised by largest population to smallest.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/17_All_cities_in_country.png|
 |18|All the cities in a district organised by largest population to smallest.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/18_All_cities_in_district.png|
-|19|The top N populated cities in the world where N is provided by the user.| | |
-|20|The top N populated cities in a continent where N is provided by the user.| | |
-|21|The top N populated cities in a region where N is provided by the user.| | |
-|22|The top N populated cities in a country where N is provided by the user.| | |
-|23|The top N populated cities in a district where N is provided by the user.| | |
+|19|The top N populated cities in the world where N is provided by the user.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/19_Top_Populated_Cities_World.png|
+|20|The top N populated cities in a continent where N is provided by the user.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/20_Top_populated_cities_continent.png|
+|21|The top N populated cities in a region where N is provided by the user.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/21_Top_populated_cities_region.png|
+|22|The top N populated cities in a country where N is provided by the user.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/22_Top_populated_cities_country.png|
+|23|The top N populated cities in a district where N is provided by the user.|Yes|https://github.com/Dane316/Group8/blob/master/screenshots/23_Top_populated_cities_district.png|
 |24|All the capital cities in the world organised by largest population to smallest.| | |
 |25|All the capital cities in a continent organised by largest population to smallest.| | |
 |26|All the capital cities in a region organised by largest to smallest.| | |
