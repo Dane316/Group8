@@ -105,7 +105,7 @@ public class App
             String strSelect =
                     "SELECT city.Name, city.Population\n" +
                     "FROM city\n" +
-                    "WHERE city.District = 'texas'\n" +
+                    "WHERE city.CountryCode = 'usa'\n" +
                     "ORDER BY city.Population DESC\n" +
                     "LIMIT 10;";
             // Execute SQL statement
