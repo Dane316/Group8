@@ -90,12 +90,12 @@ public class App
             }
         }
     }
-    /**
-     * Gets the top 10 populated cities in a country organised by largest population to smallest.
+    /** ID 23
+     * Gets the top 10 populated cities in a district organised by largest population to smallest.
      *
      * @return A list of all the cites in the table, or null if there is an error.
      */
-    public ArrayList<city> getAllcities()
+    public ArrayList<city> getTopCitiesDistrict()
     {
         try
         {
@@ -135,7 +135,7 @@ public class App
     public void printCities(ArrayList<city> cities)
     {
         // Print header
-        System.out.printf("The top 10 populated cities in the country of North America by largest population to smallest.\n");
+        System.out.printf("The top 10 populated cities in the district of Texas by largest population to smallest.\n");
         System.out.printf("%-10s %-15s%n","Name", "Population");
         // Loop over all cities in the list
         for (city emp : cities)

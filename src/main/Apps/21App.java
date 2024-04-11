@@ -13,8 +13,8 @@ public class App
         // Connect to database
         a.connect();
 
-        // Extract city information
-        ArrayList<city> cities = a.getAllcities();
+        // ID 21 Extract top cities information in a region
+        ArrayList<city> cities = a.getTopCitiesRegion();
 
         // Print the cities in the table
         a.printCities(cities);
@@ -90,12 +90,12 @@ public class App
             }
         }
     }
-    /**
+    /** ID 21
      * Gets the top 10 populated cities in a region organised by largest population to smallest.
      *
      * @return A list of all the cites in the table, or null if there is an error.
      */
-    public ArrayList<city> getAllcities()
+    public ArrayList<city> getTopCitiesRegion()
     {
         try
         {

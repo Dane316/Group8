@@ -13,8 +13,8 @@ public class App
         // Connect to database
         a.connect();
 
-        // Extract city information
-        ArrayList<city> cities = a.getAllcities();
+        // Extract top cities in the world information
+        ArrayList<city> cities = a.getTopCitiesWorld();
 
         // Print the cities in the table
         a.printCities(cities);
@@ -90,16 +90,16 @@ public class App
             }
         }
     }
-    /**
+    /** ID 19
      * Gets the top 10 populated cities in the world organised by largest population to smallest.
      *
      * @return A list of all the cites in the table, or null if there is an error.
      */
-    public ArrayList<city> getAllcities()
+    public ArrayList<city> getTopCitiesWorld()
     {
         try
         {
-            // Create an SQL statement
+            // Create an SQL statement.
             Statement stmt = con.createStatement();
             // Create string for SQL statement
             String strSelect =

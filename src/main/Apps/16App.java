@@ -13,8 +13,8 @@ public class App
         // Connect to database
         a.connect();
 
-        // Extract city information
-        ArrayList<city> cities = a.getAllcities();
+        // Extract city information in a region
+        ArrayList<city> cities = a.getAllCitiesRegion();
 
         // Print the cities in the table
         a.printCities(cities);
@@ -90,12 +90,12 @@ public class App
             }
         }
     }
-    /**
+    /** ID 16
      * Gets all the cities in the Caribbean region organised by largest population to smallest.
      *
      * @return A list of all the cites in the table, or null if there is an error.
      */
-    public ArrayList<city> getAllcities()
+    public ArrayList<city> getAllCitiesRegion()
     {
         try
         {

@@ -13,8 +13,8 @@ public class App
         // Connect to database
         a.connect();
 
-        // Extract city information
-        ArrayList<city> cities = a.getAllcities();
+        // ID 20 Extract top cities information in a continent
+        ArrayList<city> cities = a.getTopCitiesContinent();
 
         // Print the cities in the table
         a.printCities(cities);
@@ -90,12 +90,12 @@ public class App
             }
         }
     }
-    /**
+    /** ID 20
      * Gets the top 10 populated cities in a continent organised by largest population to smallest.
      *
      * @return A list of all the cites in the table, or null if there is an error.
      */
-    public ArrayList<city> getAllcities()
+    public ArrayList<city> getTopCitiesContinent()
     {
         try
         {
