@@ -58,7 +58,7 @@ public class App
         // ID 22 Extract top cities information in a country
         //ArrayList<city> cities = a.getTopCitiesCountry();
 
-        // Extract city information
+        // ID 23 Extract top cities information in a district
         ArrayList<city> cities = a.getTopCitiesDistrict();
 
         // Print the cities in the table
