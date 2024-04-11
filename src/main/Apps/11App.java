@@ -73,8 +73,8 @@ public class App
      * Gets the top 10 populated countries in the world.
      *
      * @return A list of all the countries in the table, or null if there is an error.
-     */
-    public ArrayList<country> getAllcountries()
+     *//*
+    public ArrayList<country> getTopCountriesWorld()
     {
         try
         {
@@ -102,7 +102,7 @@ public class App
             System.out.println("Failed to get country details");
             return null;
         }
-    }
+    }*/
     /**
      * Prints a list of countries.
      * @param countries The list of countries to print.
@@ -129,8 +129,8 @@ public class App
         // Connect to database
         a.connect();
 
-        // Extract country information
-        ArrayList<country> countries = a.getAllcountries();
+        // Extract top populated country information in the world
+        ArrayList<country> countries = a.getTopCountriesWorld();
 
         // Print the countries in the table
         a.printCountries(countries);

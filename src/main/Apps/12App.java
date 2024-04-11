@@ -13,8 +13,8 @@ public class App
         // Connect to database
         a.connect();
 
-        // Extract country information
-        ArrayList<country> countries = a.getAllcountries();
+        // Extract the top countries information in a continent
+        ArrayList<country> countries = a.getTopCountriesContinent();
 
         // Print the countries in the table
         a.printCountries(countries);
@@ -91,15 +91,15 @@ public class App
         }
     }
     /**
-     * Gets the top 10 populated countries in Asia.
+     * Gets the top 10 populated countries in the continent of Asia.
      *
      * @return A list of all the countries in the table, or null if there is an error.
      */
-    public ArrayList<country> getAllcountries()
+    public ArrayList<country> getTopCountriesContinent()
     {
         try
         {
-            // Create an SQL statement
+            // Create an SQL statement.
             Statement stmt = con.createStatement();
             // Create string for SQL statement
             String strSelect =

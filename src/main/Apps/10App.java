@@ -74,7 +74,7 @@ public class App
      *
      * @return A list of all the countries in the Caribbean, or null if there is an error.
      */
-    public ArrayList<country> getAllcountries()
+    public ArrayList<country> getAllCountriesRegion()
     {
         try
         {
@@ -129,8 +129,8 @@ public class App
         // Connect to database
         a.connect();
 
-        // Extract country information
-        ArrayList<country> countries = a.getAllcountries();
+        // Extract country information in a region
+        ArrayList<country> countries = a.getAllCountriesRegion();
 
         // Print the countries in the table
         a.printCountries(countries);

@@ -74,7 +74,7 @@ public class App
      *
      * @return A list of all the countries in the world, or null if there is an error.
      */
-    public ArrayList<country> getAllcountries()
+    public ArrayList<country> getAllCountriesWorld()
     {
         try
         {
@@ -130,7 +130,7 @@ public class App
         a.connect();
 
         // Extract country information
-        ArrayList<country> countries = a.getAllcountries();
+        ArrayList<country> countries = a.getAllCountriesWorld();
 
         // Print the countries in the table
         a.printCountries(countries);

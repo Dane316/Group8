@@ -13,8 +13,8 @@ public class App
         // Connect to database
         a.connect();
 
-        // Extract country information
-        ArrayList<country> countries = a.getAllcountries();
+        // Extract top countries information in a region
+        ArrayList<country> countries = a.getTopCountriesRegion();
 
         // Print the countries in the table
         a.printCountries(countries);
@@ -90,12 +90,12 @@ public class App
             }
         }
     }
-    /**
+    /** ID 13
      * Gets the top 10 populated countries in the Caribbean region.
      *
      * @return A list of all the countries in the table, or null if there is an error.
      */
-    public ArrayList<country> getAllcountries()
+    public ArrayList<country> getTopCountriesRegion()
     {
         try
         {
