@@ -13,7 +13,7 @@ public class App
         App a = new App();
         a.connect();
 
-        // Please comment out each issue once working
+        // Please comment out each issue once working properly
         ID24App ID24 = new ID24App();
         ID24.printCities(ID24.getAllCities(con));
 
