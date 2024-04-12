@@ -11,15 +11,22 @@ public class App
     {
 
         App a = new App();
-        a.connect();
+        a.connect(); //call database connect function
 
         // Please comment out each issue once working properly
-        ID24App ID24 = new ID24App();
-        ID24.printCities(ID24.getAllCities(con));
+
+        /**
+
+            ID24App ID24 = new ID24App();
+            ID24.printCities(ID24.getAllCities(con));
+         */
+
+        ID25App ID25 = new ID25App();
+        ID25.printCities(ID25.getAllCitiesContinent(con));
 
 
 
-        a.disconnect();
+        a.disconnect(); //call database disconnect function
 
     }//end main
 
