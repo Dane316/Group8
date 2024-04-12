@@ -5,35 +5,25 @@ import java.util.ArrayList;
 
 public class App
 {
+    static private Connection con = null;
+
     public static void main(String[] args)
     {
-        // Create new Application
-        App a = new App();
 
-        // Connect to database
+        App a = new App();
         a.connect();
 
-        // ID 23 Extract top cities information in a district
-        ArrayList<city> cities = a.getTopCitiesDistrict();
+        // Please comment out each issue once working properly
+        ID24App ID24 = new ID24App();
+        ID24.printCities(ID24.getAllCities(con));
 
-        // Print the cities in the table
-        a.printCities(cities);
 
-        // Test the size of the returned data - should be 240124
-        //System.out.println(cities.size());
 
-        // Disconnect from database
         a.disconnect();
-    }
 
-    /**
-     * Connection to MySQL database.
-     */
-    private Connection con = null;
+    }//end main
 
-    /**
-     * Connect to the MySQL database.
-     */
+
     public void connect()
     {
         try
@@ -91,61 +81,4 @@ public class App
         }
     }
 
-
-    /** ID 23
-     * Gets the top 10 populated cities in a district organised by largest population to smallest.
-     *
-     * @return A list of all the cites in the table, or null if there is an error.
-     */
-    public ArrayList<city> getTopCitiesDistrict()
-    {
-        try
-        {
-            // Create an SQL statement
-            Statement stmt = con.createStatement();
-            // Create string for SQL statement
-            String strSelect =
-                    "SELECT city.Name, city.Population\n" +
-                            "FROM city\n" +
-                            "WHERE city.District = 'texas'\n" +
-                            "ORDER BY city.Population DESC\n" +
-                            "LIMIT 10;";
-            // Execute SQL statement
-            ResultSet rset = stmt.executeQuery(strSelect);
-            // Extract country information
-            ArrayList<city> cities = new ArrayList<city>();
-            while (rset.next())
-            {
-                city emp = new city();
-                emp.name = rset.getString("city.name");
-                emp.population = rset.getInt("city.population");
-                cities.add(emp);
-            }
-            return cities;
-        }
-        catch (Exception e)
-        {
-            System.out.println(e.getMessage());
-            System.out.println("Failed to get city details");
-            return null;
-        }
-    }
-    /**
-     * Prints a list of cities.
-     * @param cities The list of cities to print.
-     */
-    public void printCities(ArrayList<city> cities)
-    {
-        // Print header
-        System.out.printf("The top 10 populated cities in the district of Texas by largest population to smallest.\n");
-        System.out.printf("%-10s %-15s%n","Name", "Population");
-        // Loop over all cities in the list
-        for (city emp : cities)
-        {
-            String emp_string =
-                    String.format("%-10s %-15s",
-                            emp.name, emp.population);
-            System.out.println(emp_string);
-        }
-    }
 }
