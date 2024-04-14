@@ -125,8 +125,15 @@ public class App
          */
 
         // ID26 Get population for all capital cities in a region
-        ID26App ID26 = new ID26App();
-        ID26.printCities(ID26.getAllCitiesRegion(con));
+        /*
+            ID26App ID26 = new ID26App();
+            ID26.printCities(ID26.getAllCitiesRegion(con));
+        */
+
+        // ID27 Get Top N populated capital cities in the world
+
+            ID27App ID27 = new ID27App();
+            ID27.printCities(ID27.getAllCities(con));
 
 
 
