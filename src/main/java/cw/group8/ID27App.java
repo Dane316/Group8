@@ -15,7 +15,7 @@ public class ID27App {
     /**
      * Gets Top N populated capital cities in the world
      * @param con The connection to the database.
-     * @return A list of all the countries in the world, or null if there is an error.
+     * @return A list of top N populated capital cities in the world, or null if there is an error.
      */
     public ArrayList<city> getAllCities(Connection con)
     {
@@ -25,10 +25,9 @@ public class ID27App {
             Statement stmt = con.createStatement();
             // Create string for SQL statement
             String strSelect =
-                    "SELECT  city.name, city.population, country.Region FROM city" +
+                    "SELECT  city.name, city.population FROM city" +
                             " INNER JOIN country on country.Capital=city.ID " +
-                            "where country.Region='Caribbean' " +
-                            "ORDER BY city.population DESC";
+                            "ORDER BY city.population DESC LIMIT 10";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
             // Extract country information
@@ -50,13 +49,13 @@ public class ID27App {
         }
     }
     /**
-     * Prints a list of Capital Cities in a continent.
+     * Prints a list of Top N Populated Capital Cities in the world.
      * @param cities The list of capital cities to print.
      */
     public void printCities(ArrayList<city> cities)
     {
         // Print header
-        System.out.printf("All the Capital Cities in a Region (Caribbean) organised by largest population to smallest.");
+        System.out.printf("Top N (10) Populated Capital Cities in the world");
         System.out.printf("%-10s %-15s%n", "Capital City Name", "Population");
         // Loop over all countries in the list
         for (city city_population : cities)
