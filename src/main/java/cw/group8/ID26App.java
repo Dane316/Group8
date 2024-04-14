@@ -15,7 +15,7 @@ public class ID26App {
     /**
      * Gets all the capital cities in a region organised by largest population to smallest.
      * @param con The connection to the database.
-     * @return A list of all the countries in the world, or null if there is an error.
+     * @return A list of all the capital cities in a region, or null if there is an error.
      */
     public ArrayList<city> getAllCitiesRegion(Connection con)
     {
