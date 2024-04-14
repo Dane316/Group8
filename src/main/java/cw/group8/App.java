@@ -89,20 +89,20 @@ public class App
 
         //ID20 Get top city population in a continent
         /*
-         ID20App ID20 = new ID20App();
-         ID20.printCities(ID20.getTopCitiesContinent(con));
+            ID20App ID20 = new ID20App();
+            ID20.printCities(ID20.getTopCitiesContinent(con));
          */
 
         //ID21 Get top city population in a region
         /*
-         ID21App ID21 = new ID21App();
-         ID21.printCities(ID21.getTopCitiesRegion(con));
+            ID21App ID21 = new ID21App();
+            ID21.printCities(ID21.getTopCitiesRegion(con));
          */
 
         //ID22 Get top city population in a country
         /*
-         ID22App ID22 = new ID22App();
-         ID22.printCities(ID22.getTopCitiesCountry(con));
+            ID22App ID22 = new ID22App();
+            ID22.printCities(ID22.getTopCitiesCountry(con));
          */
 
         // ID23 Get top city population in a district
@@ -119,8 +119,15 @@ public class App
          */
 
         // ID25 Get population for all capital cities in a Continent
-        ID25App ID25 = new ID25App();
-        ID25.printCities(ID25.getAllCitiesContinent(con));
+        /*
+            ID25App ID25 = new ID25App();
+            ID25.printCities(ID25.getAllCitiesContinent(con));
+         */
+
+        // ID26 Get population for all capital cities in a region
+        ID26App ID26 = new ID26App();
+        ID26.printCities(ID26.getAllCitiesRegion(con));
+
 
 
 

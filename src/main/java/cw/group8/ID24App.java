@@ -24,7 +24,9 @@ public class ID24App {
             Statement stmt = con.createStatement();
             // Create string for SQL statement
             String strSelect =
-                    "SELECT  city.name, city.population FROM city INNER JOIN country on country.Capital=city.ID ORDER BY city.population DESC";
+                    "SELECT  city.name, city.population FROM city" +
+                            " INNER JOIN country on country.Capital=city.ID " +
+                            "ORDER BY city.population DESC";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
             // Extract country information
