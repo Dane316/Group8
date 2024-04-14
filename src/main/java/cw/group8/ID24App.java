@@ -53,6 +53,13 @@ public class ID24App {
      */
     public void printCities(ArrayList<city> cities)
     {
+
+        // check cities array is not null
+        if (cities == null)
+        {
+            System.out.println("No Capital Cities Found");
+            return;
+        }
         // Print header
         System.out.printf("All the Capital Cities in the world organised by largest population to smallest.");
         System.out.printf("%-10s %-15s%n", "Capital City Name", "Population");
