@@ -29,6 +29,7 @@
     </properties>
 
     <build>
+        <testSourceDirectory>src/UnitTests/Java/cw/group8</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
