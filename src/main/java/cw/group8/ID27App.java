@@ -54,6 +54,13 @@ public class ID27App {
      */
     public void printCities(ArrayList<city> cities)
     {
+        // check cities array is not null
+        if (cities == null)
+        {
+            System.out.println("No Capital Cities Found");
+            return;
+        }
+
         // Print header
         System.out.printf("Top N (10) Populated Capital Cities in the world");
         System.out.printf("%-10s %-15s%n", "Capital City Name", "Population");
