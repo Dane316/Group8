@@ -40,7 +40,7 @@ public class ID21App
         catch (Exception e)
         {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get city details");
+            System.out.println("Failed to get city details or no cities where found");
             return null;
         }
     }
