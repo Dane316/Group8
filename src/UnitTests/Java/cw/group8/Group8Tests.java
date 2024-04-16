@@ -5,9 +5,12 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import java.util.ArrayList;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 
 public class Group8Tests
 {
+    static ID22App app22;
     static ID23App app23;
     static ID24App app24;
     static ID25App app25;
@@ -17,12 +20,17 @@ public class Group8Tests
     @BeforeAll
     static void init()
     {
+        app22 = new ID22App();
         app23 = new ID23App();
         app24 = new ID24App();
         app25 = new ID25App();
         app26 = new ID26App();
         app27 = new ID27App();
     }
+
+    //Unit testing for Issue ID 22
+    @Test
+    void ID22GetTopCitiesCountry() throws Exception {app22.getTopCitiesCountry(null);}
 
     //Unit testing for Issue ID 23
     @Test
