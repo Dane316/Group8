@@ -10,6 +10,15 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class Group8Tests
 {
+    static ID13App app13;
+    static ID14App app14;
+    static ID15App app15;
+    static ID16App app16;
+    static ID17App app17;
+    static ID18App app18;
+    static ID19App app19;
+    static ID20App app20;
+    static ID21App app21;
     static ID22App app22;
     static ID23App app23;
     static ID24App app24;
@@ -20,6 +29,15 @@ public class Group8Tests
     @BeforeAll
     static void init()
     {
+        app13 = new ID13App();
+        app14 = new ID14App();
+        app15 = new ID15App();
+        app16 = new ID16App();
+        app17 = new ID17App();
+        app18 = new ID18App();
+        app19 = new ID19App();
+        app20 = new ID20App();
+        app21 = new ID21App();
         app22 = new ID22App();
         app23 = new ID23App();
         app24 = new ID24App();
@@ -27,6 +45,42 @@ public class Group8Tests
         app26 = new ID26App();
         app27 = new ID27App();
     }
+
+    //Unit testing for Issue ID 13
+    @Test
+    void ID13GetTopCitiesCountry() throws Exception {app13.getTopCountriesRegion(null);}
+
+    //Unit testing for Issue ID 14
+    @Test
+    void ID14GetTopCitiesCountry() throws Exception {app14.getAllCitiesWorld(null);}
+
+    //Unit testing for Issue ID 15
+    @Test
+    void ID15GetTopCitiesCountry() throws Exception {app15.getAllCitiesContinent(null);}
+
+    //Unit testing for Issue ID 16
+    @Test
+    void ID16GetTopCitiesCountry() throws Exception {app16.getAllCitiesRegion(null);}
+
+    //Unit testing for Issue ID 17
+    @Test
+    void ID17GetTopCitiesCountry() throws Exception {app17.getAllCitiesCountry(null);}
+
+    //Unit testing for Issue ID 18
+    @Test
+    void ID18GetTopCitiesCountry() throws Exception {app18.getAllCitiesDistrict(null);}
+
+    //Unit testing for Issue ID 19
+    @Test
+    void ID19GetTopCitiesCountry() throws Exception {app19.getTopCitiesWorld(null);}
+
+    //Unit testing for Issue ID 20
+    @Test
+    void ID20GetTopCitiesCountry() throws Exception {app20.getTopCitiesContinent(null);}
+
+    //Unit testing for Issue ID 21
+    @Test
+    void ID21GetTopCitiesCountry() throws Exception {app21.getTopCitiesRegion(null);}
 
     //Unit testing for Issue ID 22
     @Test
