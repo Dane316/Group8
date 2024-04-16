@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 public class Group8Tests
 {
+    static ID23App app23;
     static ID24App app24;
     static ID25App app25;
     static ID26App app26;
@@ -16,11 +17,16 @@ public class Group8Tests
     @BeforeAll
     static void init()
     {
+        app23 = new ID23App();
         app24 = new ID24App();
         app25 = new ID25App();
         app26 = new ID26App();
         app27 = new ID27App();
     }
+
+    //Unit testing for Issue ID 23
+    @Test
+    void ID23AppGetTopCitiesDistrict() {app23.getTopCitiesDistrict(null);}
 
     //Unit testing for Issue ID 24
     @Test
@@ -58,6 +64,5 @@ public class Group8Tests
 
     @Test
     void ID27AppPrintCitiesTestNull() {app27.printCities(null); }
-
 
 }
