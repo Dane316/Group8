@@ -131,9 +131,15 @@ public class App
         */
 
         // ID27 Get Top N populated capital cities in the world
-
+        /*
             ID27App ID27 = new ID27App();
             ID27.printCities(ID27.getAllCities(con));
+        */
+
+        // ID35 Get Population for a Region
+
+        ID35App ID35 = new ID35App();
+        ID35.printTotalPopulation(ID35.getRegionPopulation(con));
 
 
 
