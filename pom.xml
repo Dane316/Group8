@@ -82,7 +82,7 @@
                     <finalName>Group8</finalName>
                     <archive>
                         <manifest>
-                            <mainClass>cw.group8</mainClass>
+                            <mainClass>cw.group8.App</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

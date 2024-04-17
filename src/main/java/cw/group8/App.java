@@ -10,12 +10,13 @@ public class App
     {
 
         App a = new App();
+
         if (args.length < 1) {
             a.connect("localhost:33060", 10000);
         } else {
             a.connect(args[0], Integer.parseInt(args[1]));
         }
-        a.connect(); //call database connect function
+        //a.connect(); //call database connect function
 
         // Please comment out each issue once working properly
 
