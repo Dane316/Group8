@@ -10,7 +10,13 @@ public class App
     {
 
         App a = new App();
-        a.connect(); //call database connect function
+
+        if (args.length < 1) {
+            a.connect("localhost:33060", 10000);
+        } else {
+            a.connect(args[0], Integer.parseInt(args[1]));
+        }
+        //a.connect(); //call database connect function
 
         // Please comment out each issue once working properly
 
@@ -150,7 +156,7 @@ public class App
     }//end main
 
 
-    public void connect()
+    public void connect(String location, int delay)
     {
         try
         {
@@ -164,13 +170,16 @@ public class App
         }
 
         int retries = 10;
+        boolean shouldWait = false;
         for (int i = 0; i < retries; ++i)
         {
             System.out.println("Attempting to connect to database...");
             try
             {
-                // Wait a bit for db to start
-                Thread.sleep(30000);
+                if (shouldWait) {
+                    // Wait a bit for db to start
+                    Thread.sleep(delay);
+                }
                 // Connect to database
                 con = DriverManager.getConnection("jdbc:mysql://db:3306/world?useSSL=false", "root", "example");
                 System.out.println("Successfully connected");
@@ -180,6 +189,9 @@ public class App
             {
                 System.out.println("Failed to connect to database attempt " + Integer.toString(i));
                 System.out.println(sqle.getMessage());
+
+                // Let's wait before attempting to reconnect
+                shouldWait = true;
             }
             catch (InterruptedException ie)
             {
