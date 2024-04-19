@@ -3,9 +3,6 @@ package cw.group8;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-
-
 public class Group8Tests
 {
     static ID08App app08;
@@ -28,6 +25,7 @@ public class Group8Tests
     static ID25App app25;
     static ID26App app26;
     static ID27App app27;
+    static ID31App app31;
     static ID35App app35;
 
     @BeforeAll
@@ -53,6 +51,7 @@ public class Group8Tests
         app25 = new ID25App();
         app26 = new ID26App();
         app27 = new ID27App();
+        app31 = new ID31App();
         app35 = new ID35App();
     }
 
@@ -149,15 +148,22 @@ public class Group8Tests
 
    //Unit testing for Issue ID 27
    @Test
-   void ID27AppGetAllCitiesTestNull()
-   {
-       app27.getAllCities(null);
-   }
+    void ID27AppGetAllCitiesTestNull(){
+        app27.getAllCities(null);
+    }
 
     @Test
-    void ID27AppPrintCitiesTestNull() {app27.printCities(null); }
+    void ID27AppPrintTestNull() {app27.printCities(null); }
 
+    //Unit testing for Issue ID 31
+    @Test
+    void ID31GetCityPopulationNull(){
+    app31.getCityPopulation();
+    }
+    @Test
+    void ID31AppPrintPopulationNull() {
+        app31.printPopulation(null);
+    }
+    //Unit testing for Issue ID 35
     @Test
     void ID35AppPrintCitiesTestNull() {app35.printTotalPopulation(0); }
-
-}

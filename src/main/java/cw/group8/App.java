@@ -140,11 +140,11 @@ public class App
             ID27.printCities(ID27.getAllCities(con));
         */
 
-        // ID34 Get Population for a Continent
+        /*// ID34 Get Population for a Continent
 
         ID34App ID34 = new ID34App();
         ID34.printTotalPopulation(ID34.getContinentPopulation(con));
-
+        */
         // ID35 Get Population for a Region
         /*
         ID35App ID35 = new ID35App();
