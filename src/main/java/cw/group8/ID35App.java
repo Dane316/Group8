@@ -14,7 +14,7 @@ public class ID35App {
     /**
      * Gets total population for a region
      * @param con The connection to the database.
-     * @return double value of total population for a region, or null if there is an error.
+     * @return int value of total population for a region, or 0 if there is an error.
      */
     public int getRegionPopulation(Connection con)
     {
@@ -48,7 +48,7 @@ public class ID35App {
      */
     public void printTotalPopulation(int total)
     {
-        // check cities array is not null
+        // check total if 0
         if (total == 0)
         {
             System.out.println("Failed to get Region Population details");
