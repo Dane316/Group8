@@ -3,8 +3,7 @@ package cw.group8;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-public class Group8Tests
-{
+public class Group8Tests {
     static ID08App app08;
     static ID09App app09;
     static ID10App app10;
@@ -29,8 +28,7 @@ public class Group8Tests
     static ID35App app35;
 
     @BeforeAll
-    static void init()
-    {
+    static void init() {
         app08 = new ID08App();
         app09 = new ID09App();
         app10 = new ID10App();
@@ -57,113 +55,158 @@ public class Group8Tests
 
     //Unit testing for Issue ID 08
     @Test
-    void ID08GetAllCountriesWorld() throws Exception {app08.getAllCountriesWorld(null);}
+    void ID08GetAllCountriesWorld() throws Exception {
+        app08.getAllCountriesWorld(null);
+    }
 
     //Unit testing for Issue ID 09
     @Test
-    void ID09GetAllCountriesContinent() throws Exception {app09.getAllCountriesContinent(null);}
+    void ID09GetAllCountriesContinent() throws Exception {
+        app09.getAllCountriesContinent(null);
+    }
 
     //Unit testing for Issue ID 10
     @Test
-    void ID10GetAllCountriesRegion() throws Exception {app10.getAllCountriesRegion(null);}
+    void ID10GetAllCountriesRegion() throws Exception {
+        app10.getAllCountriesRegion(null);
+    }
 
     //Unit testing for Issue ID 11
     @Test
-    void ID11GetTopCountriesWorld() throws Exception {app11.getTopCountriesWorld(null);}
+    void ID11GetTopCountriesWorld() throws Exception {
+        app11.getTopCountriesWorld(null);
+    }
 
     //Unit testing for Issue ID 12
     @Test
-    void ID12GetTopCountriesContinent() throws Exception {app12.getTopCountriesContinent(null);}
+    void ID12GetTopCountriesContinent() throws Exception {
+        app12.getTopCountriesContinent(null);
+    }
 
     //Unit testing for Issue ID 13
     @Test
-    void ID13GetTopCountriesRegion() throws Exception {app13.getTopCountriesRegion(null);}
+    void ID13GetTopCountriesRegion() throws Exception {
+        app13.getTopCountriesRegion(null);
+    }
 
     //Unit testing for Issue ID 14
     @Test
-    void ID14GetAllCitiesWorld() throws Exception {app14.getAllCitiesWorld(null);}
+    void ID14GetAllCitiesWorld() throws Exception {
+        app14.getAllCitiesWorld(null);
+    }
 
     //Unit testing for Issue ID 15
     @Test
-    void ID15GetAllCitiesContinent() throws Exception {app15.getAllCitiesContinent(null);}
+    void ID15GetAllCitiesContinent() throws Exception {
+        app15.getAllCitiesContinent(null);
+    }
 
     //Unit testing for Issue ID 16
     @Test
-    void ID16GetAllCitiesRegion() throws Exception {app16.getAllCitiesRegion(null);}
+    void ID16GetAllCitiesRegion() throws Exception {
+        app16.getAllCitiesRegion(null);
+    }
 
     //Unit testing for Issue ID 17
     @Test
-    void ID17GetAllCitiesCountry() throws Exception {app17.getAllCitiesCountry(null);}
+    void ID17GetAllCitiesCountry() throws Exception {
+        app17.getAllCitiesCountry(null);
+    }
 
     //Unit testing for Issue ID 18
     @Test
-    void ID18GetAllCitiesDistrict() throws Exception {app18.getAllCitiesDistrict(null);}
+    void ID18GetAllCitiesDistrict() throws Exception {
+        app18.getAllCitiesDistrict(null);
+    }
 
     //Unit testing for Issue ID 19
     @Test
-    void ID19GetTopCitiesWorld() throws Exception {app19.getTopCitiesWorld(null);}
+    void ID19GetTopCitiesWorld() throws Exception {
+        app19.getTopCitiesWorld(null);
+    }
 
     //Unit testing for Issue ID 20
     @Test
-    void ID20GetTopCitiesContinent() throws Exception {app20.getTopCitiesContinent(null);}
+    void ID20GetTopCitiesContinent() throws Exception {
+        app20.getTopCitiesContinent(null);
+    }
 
     //Unit testing for Issue ID 21
     @Test
-    void ID21GetTopCitiesRegion() throws Exception {app21.getTopCitiesRegion(null);}
+    void ID21GetTopCitiesRegion() throws Exception {
+        app21.getTopCitiesRegion(null);
+    }
 
     //Unit testing for Issue ID 22
     @Test
-    void ID22GetTopCitiesCountry() throws Exception {app22.getTopCitiesCountry(null);}
+    void ID22GetTopCitiesCountry() throws Exception {
+        app22.getTopCitiesCountry(null);
+    }
 
     //Unit testing for Issue ID 23
     @Test
-    void ID23AppGetTopCitiesDistrict() {app23.getTopCitiesDistrict(null);}
+    void ID23AppGetTopCitiesDistrict() {
+        app23.getTopCitiesDistrict(null);
+    }
 
     //Unit testing for Issue ID 24
     @Test
-    void ID24AppGetAllCitiesTestNull()
-    {
+    void ID24AppGetAllCitiesTestNull() {
         app24.getAllCities(null);
     }
 
     @Test
-    void ID24AppPrintCitiesTestNull() {app24.printCities(null); }
+    void ID24AppPrintCitiesTestNull() {
+        app24.printCities(null);
+    }
 
     //Unit testing for Issue ID 25
     @Test
-    void ID25AppGetAllCitiesTestNull() {app25.getAllCitiesContinent(null);}
+    void ID25AppGetAllCitiesTestNull() {
+        app25.getAllCitiesContinent(null);
+    }
 
     @Test
-    void ID25AppPrintCitiesTestNull() {app25.printCities(null); }
+    void ID25AppPrintCitiesTestNull() {
+        app25.printCities(null);
+    }
 
     //Unit testing for Issue ID 26
     @Test
-    void ID26AppGetAllCitiesTestNull()
-    {
+    void ID26AppGetAllCitiesTestNull() {
         app26.getAllCitiesRegion(null);
     }
 
     @Test
-    void ID26AppPrintCitiesTestNull() {app26.printCities(null); }
+    void ID26AppPrintCitiesTestNull() {
+        app26.printCities(null);
+    }
 
-   //Unit testing for Issue ID 27
-   @Test
-    void ID27AppGetAllCitiesTestNull(){
+    //Unit testing for Issue ID 27
+    @Test
+    void ID27AppGetAllCitiesTestNull() {
         app27.getAllCities(null);
     }
 
     @Test
-    void ID27AppPrintTestNull() {app27.printCities(null); }
+    void ID27AppPrintTestNull() {
+        app27.printCities(null);
+    }
 
     //Unit testing for Issue ID 31
     @Test
-    void ID31GetCityPopulationNull(){
-    app31.getCityPopulation(null);
+    void ID31GetCityPopulationNull() {
+        app31.getCityPopulation(null);
     }
+
     @Test
     void ID31AppPrintPopulationNull() {
         app31.printPopulation(null);
     }
+
     //Unit testing for Issue ID 35
     @Test
-    void ID35AppPrintCitiesTestNull() {app35.printTotalPopulation(0); }
+    void ID35AppPrintCitiesTestNull() {
+        app35.printTotalPopulation(0);
+    }
+}
