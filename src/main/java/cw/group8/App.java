@@ -16,7 +16,6 @@ public class App
         } else {
             a.connect(args[0], Integer.parseInt(args[1]));
         }
-        //a.connect(); //call database connect function
 
         // Please comment out each issue once working properly
 
@@ -26,7 +25,6 @@ public class App
              ID08.printCities(ID08.getAllCountriesWorld(con));
          */
 
-        //Test comment
         //ID09 Get all countries population in a continent
         /*
          ID09App ID09 = new ID09App();
@@ -142,10 +140,17 @@ public class App
             ID27.printCities(ID27.getAllCities(con));
         */
 
-        // ID35 Get Population for a Region
+        // ID34 Get Population for a Continent
 
+        ID34App ID34 = new ID34App();
+        ID34.printTotalPopulation(ID34.getContinentPopulation(con));
+
+        // ID35 Get Population for a Region
+        /*
         ID35App ID35 = new ID35App();
         ID35.printTotalPopulation(ID35.getRegionPopulation(con));
+         */
+
 
 
 
