@@ -36,6 +36,7 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
+                    <finalName>Group8</finalName>
                     <archive>
                         <manifest>
                             <mainClass>cw.group8.App</mainClass>
@@ -94,6 +95,8 @@
                     </execution>
                 </executions>
             </plugin>
+
+
 
         </plugins>
     </build>
