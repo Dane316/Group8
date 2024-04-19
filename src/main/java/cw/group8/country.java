@@ -31,4 +31,5 @@ public String region;
  * Enumeration
  */
 public String continent;
+
 }

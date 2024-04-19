@@ -1,9 +1,9 @@
 package cw.group8;
 
-import javax.swing.plaf.synth.Region;
+import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
-import java.sql.*;
 
 
 /**
@@ -62,7 +62,7 @@ public class ID27App {
         }
 
         // Print header
-        System.out.printf("Top N (10) Populated Capital Cities in the world");
+        System.out.println("Top N (10) Populated Capital Cities in the world");
         System.out.printf("%-10s %-15s%n", "Capital City Name", "Population");
         // Loop over all countries in the list
         for (city city_population : cities)
