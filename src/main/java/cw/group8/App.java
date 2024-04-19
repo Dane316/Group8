@@ -145,13 +145,16 @@ public class App
         ID34App ID34 = new ID34App();
         ID34.printTotalPopulation(ID34.getContinentPopulation(con));
         */
-        // ID35 Get Population for a Region
-        /*
-        ID35App ID35 = new ID35App();
+
+        // ID31 Get City and Non-City Population for a Region
+
+       ID31App ID31 = new ID31App();
+       ID31.printPopulation(ID31.getCityPopulation(con));
+
+
+        /* ID35App ID35 = new ID35App();
         ID35.printTotalPopulation(ID35.getRegionPopulation(con));
-         */
-
-
+        */
 
 
 
