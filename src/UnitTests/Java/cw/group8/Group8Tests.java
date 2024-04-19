@@ -28,6 +28,7 @@ public class Group8Tests
     static ID25App app25;
     static ID26App app26;
     static ID27App app27;
+    static ID35App app35;
 
     @BeforeAll
     static void init()
@@ -52,6 +53,7 @@ public class Group8Tests
         app25 = new ID25App();
         app26 = new ID26App();
         app27 = new ID27App();
+        app35 = new ID35App();
     }
 
     //Unit testing for Issue ID 08
@@ -154,5 +156,8 @@ public class Group8Tests
 
     @Test
     void ID27AppPrintCitiesTestNull() {app27.printCities(null); }
+
+    @Test
+    void ID35AppPrintCitiesTestNull() {app35.printTotalPopulation(0); }
 
 }
