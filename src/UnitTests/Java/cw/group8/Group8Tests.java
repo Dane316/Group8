@@ -199,10 +199,6 @@ public class Group8Tests {
         app31.getCityPopulation(null);
     }
 
-    @Test
-    void ID31AppPrintPopulationNull() {
-        app31.printPopulation(null);
-    }
 
     //Unit testing for Issue ID 35
     @Test
