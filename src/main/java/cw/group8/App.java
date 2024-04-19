@@ -140,18 +140,27 @@ public class App
             ID27.printCities(ID27.getAllCities(con));
         */
 
-        // ID34 Get Population for a Continent
+        /*// ID34 Get Population for a Continent
 
         ID34App ID34 = new ID34App();
         ID34.printTotalPopulation(ID34.getContinentPopulation(con));
+        */
 
-        // ID35 Get Population for a Region
-        /*
-        ID35App ID35 = new ID35App();
+        // ID31 Get City and Non-City Population for a Region
+
+       /*ID31App ID31 = new ID31App();
+       ID31.printPopulation(ID31.getCityPopulation(con));*/
+
+        // ID33 Get World Population
+
+       ID33App ID33 = new ID33App();
+       ID33.printTotalPopulation(ID33.getWorldPopulation(con));
+
+
+
+        /* ID35App ID35 = new ID35App();
         ID35.printTotalPopulation(ID35.getRegionPopulation(con));
-         */
-
-
+        */
 
 
 
