@@ -158,7 +158,7 @@ public class Group8Tests
     //Unit testing for Issue ID 31
     @Test
     void ID31GetCityPopulationNull(){
-    app31.getCityPopulation();
+    app31.getCityPopulation(null);
     }
     @Test
     void ID31AppPrintPopulationNull() {
