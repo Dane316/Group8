@@ -11,6 +11,7 @@
 # Software Engineering Methods
 * Master Build Status ![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/Dane316/Group8/main.yml?branch=master)
 * Develop Branch Status ![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/Dane316/Group8/main.yml?branch=develop)
+* Code Coverage Status [![codecov](https://codecov.io/gh/Dane316/Group8/graph/badge.svg?token=0GDQQ6Q7VF)](https://codecov.io/gh/Dane316/Group8)
 * License [![LICENSE](https://img.shields.io/github/license/Dane316/Group8.svg?style=flat-square)](https://github.com/Dane316/Group8/blob/master/LICENSE)
 * Release [![Releases](https://img.shields.io/github/release/Dane316/Group8/all.svg?style=flat-square)](https://github.com/Dane316/Group8/releases)
  
