@@ -12,9 +12,8 @@ public class ID31App {
     /**
      * Gets Population of People Living or Not Living in Cities by Region
      **/
-    public ArrayList<Object> getCityPopulation(Connection con) {
-
-            ResultSet rset;
+    public ArrayList<country> getCityPopulation(Connection con) {
+        ResultSet rset;
             try {
             // Create an SQL statement
             Statement stmt = con.createStatement();
