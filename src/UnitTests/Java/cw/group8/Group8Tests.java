@@ -27,8 +27,9 @@ public class Group8Tests
     static ID25App app25;
     static ID26App app26;
     static ID27App app27;
-
     static ID31App app31;
+    static ID33App app33;
+    static ID34App app34;
     static ID35App app35;
 
     @BeforeAll
@@ -55,6 +56,8 @@ public class Group8Tests
         app26 = new ID26App();
         app27 = new ID27App();
         app31 = new ID31App();
+        app33 = new ID33App();
+        app34 = new ID34App();
         app35 = new ID35App();
     }
 
@@ -128,14 +131,12 @@ public class Group8Tests
     {
         app24.getAllCities(null);
     }
-
     @Test
     void ID24AppPrintCitiesTestNull() {app24.printCities(null); }
 
     //Unit testing for Issue ID 25
     @Test
     void ID25AppGetAllCitiesTestNull() {app25.getAllCitiesContinent(null);}
-
     @Test
     void ID25AppPrintCitiesTestNull() {app25.printCities(null); }
 
@@ -145,7 +146,6 @@ public class Group8Tests
     {
         app26.getAllCitiesRegion(null);
     }
-
     @Test
     void ID26AppPrintCitiesTestNull() {app26.printCities(null); }
 
@@ -155,23 +155,32 @@ public class Group8Tests
    {
        app27.getAllCities(null);
    }
-
-    @Test
-    void ID27AppPrintCitiesTestNull() {app27.printCities(null); }
-
-    @Test
-    void ID35AppPrintCitiesTestNull() {app35.printTotalPopulation(0); }
+   @Test
+   void ID27AppPrintCitiesTestNull() {app27.printCities(null); }
 
     //Unit testing for Issue ID 31
     @Test
-
     void ID31GetCityPopulationNull()
     {
         app31.getCityPopulation(null);
     }
-
     @Test
     void ID31PrintPopulationTestNull() {app31.printPopulation(null); }
 
+    //Unit testing for Issue ID 33
+    @Test
+    void ID33AppgetWorldPopulationTestNull() {app33.getWorldPopulation(null); }
+    @Test
+    void ID33AppPrintTotalPopulationTestNull() {app33.printTotalPopulation(0); }
 
+    //Unit testing for Issue ID 34
+    @Test
+    void ID34AppGetContinentPopulationTestNull() {app34.getContinentPopulation(null); }
+    @Test
+    void ID34AppPrintCitiesTestNull() {app34.printTotalPopulation(0); }
+
+    @Test
+    void ID34AppGetRegionPopulationTestNull() {app35.getRegionPopulation(null); }
+    @Test
+    void ID34AppPrintTotalPopulationTestNull() {app35.printTotalPopulation(0); }
 }
