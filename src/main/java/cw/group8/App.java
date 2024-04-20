@@ -141,25 +141,28 @@ public class App
         */
 
         // ID31 Gets Population of People Living or Not Living in Cities by Region
-
+         /*
         ID31App ID31 = new ID31App();
         ID31.printPopulation(ID31.getCityPopulation(con));
+        */
 
-        /*// ID34 Get Population for a Region
+        // ID33 Get Population for a Region
 
+        ID33App ID33 = new ID33App();
+        ID33.printTotalPopulation(ID33.getWorldPopulation(con));
+
+
+        // ID34 Get Population for a Region
+        /*
         ID34App ID34 = new ID34App();
         ID34.printTotalPopulation(ID34.getContinentPopulation(con));
         */
 
-
-
-
         // ID35 Get Population for a Region
-
-        /*ID35App ID35 = new ID35App();
+        /*
+        ID35App ID35 = new ID35App();
         ID35.printTotalPopulation(ID35.getRegionPopulation(con));
-         */
-
+        */
 
 
 
@@ -202,7 +205,7 @@ public class App
             }
             catch (SQLException sqle)
             {
-                System.out.println("Failed to connect to database attempt " + Integer.toString(i));
+                System.out.println("Failed to connect to database attempt ");
                 System.out.println(sqle.getMessage());
 
                 // Let's wait before attempting to reconnect
