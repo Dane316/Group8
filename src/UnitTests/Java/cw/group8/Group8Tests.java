@@ -31,6 +31,7 @@ public class Group8Tests
     static ID33App app33;
     static ID34App app34;
     static ID35App app35;
+    static ID39App app39;
 
     @BeforeAll
     static void init()
@@ -59,6 +60,7 @@ public class Group8Tests
         app33 = new ID33App();
         app34 = new ID34App();
         app35 = new ID35App();
+        app39 = new ID39App();
     }
 
     //Unit testing for Issue ID 08
@@ -183,4 +185,9 @@ public class Group8Tests
     void ID34AppGetRegionPopulationTestNull() {app35.getRegionPopulation(null); }
     @Test
     void ID34AppPrintTotalPopulationTestNull() {app35.printTotalPopulation(0); }
+
+    @Test
+    void ID39AppGetRegionPopulationTestNull() {app39.getLanguage(null); }
+    @Test
+    void ID39AppPrintTotalPopulationTestNull() {app39.printLanguageDetails(null); }
 }
