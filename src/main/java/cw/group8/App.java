@@ -148,8 +148,8 @@ public class App
 
         // ID33 Get Population for a Region
 
-        ID33App ID33 = new ID33App();
-        ID33.printTotalPopulation(ID33.getWorldPopulation(con));
+        ID39App ID39 = new ID39App();
+        ID39.printLanguageDetails(ID39.getLanguage(con));
 
 
         // ID34 Get Population for a Region
