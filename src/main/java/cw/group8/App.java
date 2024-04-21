@@ -19,7 +19,7 @@ public class App
 
         // Please comment out each issue once working properly
 
-        /*  START BLOCK COMMENT
+        //  START BLOCK COMMENT
 
         //ID08 Get all countries population in the world
 
@@ -87,7 +87,7 @@ public class App
          ID18App ID18 = new ID18App();
          ID18.printCities(ID18.getAllCitiesDistrict(con));
 
- */  //END BLOCK COMMENT
+ //*/  //END BLOCK COMMENT
 
         //ID19 Get top city population in the world
 
