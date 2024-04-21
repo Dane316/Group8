@@ -54,9 +54,8 @@ public class ID33App {
             return;
         }
 
-        // Print header
-        System.out.printf("Population of the World is : ");
-        System.out.println(total);
+        // Print result
+        System.out.println("Population of the World is : " + total);
     }//end printTotalPopulation
 
 }//end ID33App
