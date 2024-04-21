@@ -19,77 +19,81 @@ public class App
 
         // Please comment out each issue once working properly
 
+        /*  START BLOCK COMMENT
+
         //ID08 Get all countries population in the world
-        /*
+
              ID08App ID08 = new ID08App();
-             ID08.printCities(ID08.getAllCountriesWorld(con));
-         */
+             ID08.printCountries(ID08.getAllCountriesWorld(con));
+
 
         //ID09 Get all countries population in a continent
-        /*
+
          ID09App ID09 = new ID09App();
-         ID09.printCities(ID09.getAllCountriesContinent(con));
-         */
+         ID09.printCountries(ID09.getAllCountriesContinent(con));
+
         
         //ID10 Get all countries population in a region
-        /*
+
          ID10App ID10 = new ID10App();
-         ID10.printCities(ID10.getAllCountriesRegion(con));
-         */
+         ID10.printCountries(ID10.getAllCountriesRegion(con));
+
         
         //ID11 Get top countries population in the world
-        /*
+
          ID11App ID11 = new ID11App();
-         ID11.printCities(ID11.getTopCountriesWorld(con));
-         */
+         ID11.printCountries(ID11.getTopCountriesWorld(con));
+
         
         //ID12 Get top countries population in a continent
-        /*
+
          ID12App ID12 = new ID12App();
-         ID12.printCities(ID12.getTopCountriesContinent(con));
-         */
+         ID12.printCountries(ID12.getTopCountriesContinent(con));
+
         
         //ID13 Get top countries population in a region
-        /*
+
          ID13App ID13 = new ID13App();
-         ID13.printCities(ID13.getTopCountriesRegion(con));
-         */
+         ID13.printCountries(ID13.getTopCountriesRegion(con));
+
         
         //ID14 Get all city population in the world
-        /*
+
          ID14App ID14 = new ID14App();
          ID14.printCities(ID14.getAllCitiesWorld(con));
-         */
+
+
         
         //ID15 Get all city population in a continent
-        /*
+
          ID15App ID15 = new ID15App();
          ID15.printCities(ID15.getAllCitiesContinent(con));
-         */
-        
+
         //ID16 Get all city population in a region
-        /*
+
          ID16App ID16 = new ID16App();
          ID16.printCities(ID16.getAllCitiesRegion(con));
-         */
+
         
         //ID17 Get all city population in a country
-        /*
+
          ID17App ID17 = new ID17App();
          ID17.printCities(ID17.getAllCitiesCountry(con));
-         */
+
+
         
         //ID18 Get all city population in a district
-        /*
+
          ID18App ID18 = new ID18App();
          ID18.printCities(ID18.getAllCitiesDistrict(con));
-         */
-        
+
+ */  //END BLOCK COMMENT
+
         //ID19 Get top city population in the world
-        /*
+
          ID19App ID19 = new ID19App();
          ID19.printCities(ID19.getTopCitiesWorld(con));
-         */
+
 
         //ID20 Get top city population in a continent
         /*
@@ -147,10 +151,10 @@ public class App
         */
 
         // ID33 Get Population for a Region
-
+        /*
         ID39App ID39 = new ID39App();
         ID39.printLanguageDetails(ID39.getLanguage(con));
-
+        */
 
         // ID34 Get Population for a Region
         /*
@@ -162,7 +166,7 @@ public class App
         /*
         ID35App ID35 = new ID35App();
         ID35.printTotalPopulation(ID35.getRegionPopulation(con));
-        */
+         */
 
 
 
