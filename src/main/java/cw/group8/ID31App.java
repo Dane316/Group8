@@ -54,13 +54,13 @@ public class ID31App {
 
             //Print Population Report
             public void printPopulation(ArrayList<nonCity> regionPopulation) {
-                // check cityPopulation array is not null
+                // check regionPopulation array is not null
                 if (regionPopulation == null)
                 {
-                    System.out.println("No Region Population Found");
+                    System.out.println("No Region Population Found from this Query");
+                    System.out.println("Query needs revisions");
                     return;
                 }
-
                 System.out.println(String.format("%-30s\t%20s\t%20s", "Region", "City Population", "Non-City Population"));
                 for (nonCity nc : regionPopulation) {
                     String printRegion =
