@@ -11,6 +11,11 @@ public class nonCity {
     public String country_region;
 
     /**
+     * Country Name
+     */
+    public String country_name;
+
+    /**
      * City Name
      */
     public String city_name;
@@ -19,7 +24,6 @@ public class nonCity {
      * Region Population
      */
     public long region_population;
-
 
     /**
      * City Population

@@ -146,10 +146,15 @@ public class App
         ID34.printTotalPopulation(ID34.getContinentPopulation(con));
         */
 
-        // ID30 Get City and Non-City Population by Continent
+        /*// ID30 Get City and Non-City Population by Continent
 
        ID30App ID30 = new ID30App();
        ID30.printPopulation(ID30.getContinentPopulation(con));
+        */
+        // ID31 Get City and Non-City Population for a Region
+
+       ID32App ID32 = new ID32App();
+       ID32.printPopulation(ID32.getCountryPopulation(con));
 
         // ID31 Get City and Non-City Population for a Region
 
