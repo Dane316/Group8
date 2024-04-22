@@ -3,18 +3,29 @@ package cw.group8;
 public class nonCity {
 
     /**
-     * Name
+     * Region Name
      */
-    public String coutry_region;
+    public String country_region;
 
     /**
-     * Country Code
+     * City Name
      */
-    public int city_population;
+    public String city_name;
 
     /**
-     * District
+     * Region Population
      */
-    public int non_city_population;
+    public long region_population;
+
+
+    /**
+     * City Population
+     */
+    public long city_population;
+
+    /**
+     * NonCity Population
+     */
+    public long non_city_population;
 
 }

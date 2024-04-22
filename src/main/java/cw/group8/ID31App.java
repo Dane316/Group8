@@ -14,30 +14,32 @@ public class ID31App {
      **/
     public ArrayList<nonCity> getCityPopulation(Connection con) {
         ResultSet rset;
-        try {
+            try {
             // Create an SQL statement
             Statement stmt = con.createStatement();
 
             // Create string for SQL statement
-            String sql =
-                    "SELECT country.region AS country_region, country.population, city.population," +
-                            "SUM(city.population) AS city_population," +
-                            "(country.population - SUM(city.population)) AS non_city_population " +
-                            "FROM country " +
-                            "INNER JOIN city ON country.code = city.countryCode " +
-                            "GROUP BY country.region " +
-                            "ORDER BY country.population";
+                String sql =
+                        "SELECT DISTINCT country.region AS country_region, " +
+                                "     SUM(city.population) AS city_population, " +
+                                "     (SUM(country.population) - SUM(city.population)) AS non_city_population " +
+                                "FROM country " +
+                                "INNER JOIN city ON country.code = city.countryCode " +
+                                "GROUP BY country.region " + //Group by region only
+                                "ORDER BY country.region";
 
-            // Execute SQL statement
+
+
+                // Execute SQL statement
             rset = stmt.executeQuery(sql);
 
-            // Extract Population information
+           // Extract Population information
             ArrayList<nonCity> regionPopulation = new ArrayList<>();
             while (rset.next()) {
                 nonCity nonCities = new nonCity ();
-                nonCities.coutry_region = rset.getString("country_region");
-                nonCities.city_population = rset.getInt("city_population");
-                nonCities.non_city_population = rset.getInt("non_city_population");
+                nonCities.country_region = rset.getString("country_region");
+                nonCities.city_population = rset.getLong("city_population");
+                nonCities.non_city_population = rset.getLong("non_city_population");
                 regionPopulation.add(nonCities);
             }
             return regionPopulation;
@@ -50,21 +52,21 @@ public class ID31App {
 
     }
 
-    //Print Population Report
-    public void printPopulation(ArrayList<nonCity> regionPopulation) {
-        // check cityPopulation array is not null
-        if (regionPopulation == null)
-        {
-            System.out.println("No Region Population Found");
-            return;
-        }
-
-        System.out.println("Region\t\tCity Population\tNon-City Population");
-        for (nonCity nc : regionPopulation) {
-            String printRegion =
-                    String.format("%-10s %-15s %25s",nc.coutry_region,nc.city_population,nc.non_city_population);
-            System.out.println(printRegion);
-        }
+            //Print Population Report
+            public void printPopulation(ArrayList<nonCity> regionPopulation) {
+                // check regionPopulation array is not null
+                if (regionPopulation == null)
+                {
+                    System.out.println("No Region Population Found from this Query");
+                    System.out.println("Query needs revisions");
+                    return;
+                }
+                System.out.println(String.format("%-30s\t%20s\t%20s", "Region", "City Population", "Non-City Population"));
+                for (nonCity nc : regionPopulation) {
+                    String printRegion =
+                    String.format("%-30s\t%20s\t%20s",nc.country_region,nc.city_population,nc.non_city_population);
+                    System.out.println(printRegion);
+                }
 
 
     }
