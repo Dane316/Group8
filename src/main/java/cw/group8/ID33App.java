@@ -11,52 +11,51 @@ import java.sql.*;
 public class ID33App {
 
     /**
-     * Gets total population for a continent
+     * Gets total population of the world
      * @param con The connection to the database.
-     * @return int value of total population of the world, or null if there is an error.
+     * @return long value of total population for a continent, or null if there is an error.
      */
-    public int getWorldPopulation(Connection con)
+    public long getWorldPopulation(Connection con)
     {
-        int WorldPopulation=0;
+        long WorldPopulation=0;
         try
         {
             // Create an SQL statement
             Statement stmt = con.createStatement();
             // Create string for SQL statement
             String strSelect =
-                    "SELECT Population FROM country" +"sum(country.population),";
+                    "SELECT SUM(Population) as world_population FROM country";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
             // Extract continent information
             while (rset.next())
             {
-                WorldPopulation= WorldPopulation + rset.getInt("country.Population") ;
+                WorldPopulation= Long.parseLong((String.valueOf(rset.getLong(1))));
             }
             return WorldPopulation;
         }
         catch (Exception e)
         {
             System.out.println(e.getMessage());
-            System.out.println("Failed to get World Population details");
+            System.out.println("Failed to World Population details");
             return 0;
         }
     }
     /**
-     * Prints The total population of the continent.
-     * @param total The total population of the continent to print.
+     * Prints The total population of the World.
+     * @param total The total population of the world to print.
      */
-    public void printTotalPopulation(int total)
+    public void printTotalPopulation(long total)
     {
         // check total if 0
         if (total == 0)
         {
-            System.out.println("Failed to get world Population details");
+            System.out.println("Failed to get World Population details");
             return;
         }
 
-        // Print header
-        System.out.printf("Population for the World :");
-        System.out.println(total);
+        // Print result
+        System.out.println("Population of the World is : " + total);
     }//end printTotalPopulation
 
 }//end ID33App

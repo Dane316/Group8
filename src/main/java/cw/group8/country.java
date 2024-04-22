@@ -28,7 +28,8 @@ public int population;
 public String region;
 
 /**
- * Enumeration
+ * Continent
  */
 public String continent;
+
 }
