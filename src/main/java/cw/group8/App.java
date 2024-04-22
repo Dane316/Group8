@@ -153,15 +153,16 @@ public class App
         */
         // ID31 Get City and Non-City Population for a Region
 
-       ID32App ID32 = new ID32App();
+       /*ID32App ID32 = new ID32App();
        ID32.printPopulation(ID32.getCountryPopulation(con));
+        */
 
         // ID31 Get City and Non-City Population for a Region
 
        /*ID31App ID31 = new ID31App();
        ID31.printPopulation(ID31.getCityPopulation(con));*/
 
-        // ID33 Get World Population
+        // ID33App Get World Population
 
        /*ID33App ID33 = new ID33App();
        ID33.printTotalPopulation(ID33.getWorldPopulation(con));
@@ -172,7 +173,10 @@ public class App
         ID35.printTotalPopulation(ID35.getRegionPopulation(con));
         */
 
-
+        //ID36App Returns a list of all the countries in the world
+        // with country code, name, continent, region, capital, and population
+         ID36App ID36 = new ID36App();
+         ID36.printCountries(ID36.getAllCountryPopulation(con));
 
 
         a.disconnect(); //call database disconnect function
