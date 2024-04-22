@@ -20,6 +20,7 @@ public class App
         // Please comment out each issue once working properly
 
         //  START BLOCK COMMENT
+        /*
 
         //ID08 Get all countries population in the world
 
@@ -87,13 +88,11 @@ public class App
          ID18App ID18 = new ID18App();
          ID18.printCities(ID18.getAllCitiesDistrict(con));
 
- //*/  //END BLOCK COMMENT
-
-        //ID19 Get top city population in the world
+         //ID19 Get top city population in the world
 
          ID19App ID19 = new ID19App();
          ID19.printCities(ID19.getTopCitiesWorld(con));
-
+//*/  //END BLOCK COMMENT
 
         //ID20 Get top city population in a continent
         /*
@@ -144,11 +143,11 @@ public class App
             ID27.printCities(ID27.getAllCities(con));
         */
 
-        // ID31 Gets Population of People Living or Not Living in Cities by Region
-         /*
+        //ID31 Gets Population of People Living or Not Living in Cities by Region
+
         ID31App ID31 = new ID31App();
         ID31.printPopulation(ID31.getCityPopulation(con));
-        */
+
 
         // ID33 Get Population for a Region
         /*
