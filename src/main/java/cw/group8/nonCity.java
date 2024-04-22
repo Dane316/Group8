@@ -1,7 +1,10 @@
 package cw.group8;
 
 public class nonCity {
-
+    /**
+     * Continent Name
+     */
+    public String continent_name;
     /**
      * Region Name
      */
