@@ -173,10 +173,16 @@ public class App
         ID35.printTotalPopulation(ID35.getRegionPopulation(con));
         */
 
-        //ID36App Returns a list of all the countries in the world
+        /*//ID36App Returns a list of all the countries in the world
         // with country code, name, continent, region, capital, and population
          ID36App ID36 = new ID36App();
          ID36.printCountries(ID36.getAllCountryPopulation(con));
+        */
+
+        //ID38App Returns a list of all the countries in the world
+        // with country code, name, continent, region, capital, and population
+        ID38App ID38 = new ID38App();
+        ID38.printCities(ID38.getAllCityPopulation(con));
 
 
         a.disconnect(); //call database disconnect function
