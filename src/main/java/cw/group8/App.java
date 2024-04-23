@@ -180,7 +180,7 @@ public class App
         */
 
         //ID38App Returns a list of all the countries in the world
-        // with country code, name, continent, region, capital, and population
+        // with city,district,and population
         ID38App ID38 = new ID38App();
         ID38.printCities(ID38.getAllCityPopulation(con));
 

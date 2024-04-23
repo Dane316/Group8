@@ -12,7 +12,7 @@ public class ID38App
      * @return A list of all the cities in the world
      * with city name, country, district, and population or null if there is an error.
      */
-    public ArrayList<city> getAllCityPopulation (Connection con)
+    public ArrayList<nonCity> getAllCityPopulation (Connection con)
     {
         ResultSet rset = null;
         try
@@ -22,25 +22,25 @@ public class ID38App
             // Create string for SQL statement
             String strSelect =
                     "SELECT " +
+                            "country.name AS country_name, " +
                             "city.name AS city_name, " +
-                            "city.countryName AS country_name, " +
                             "city.district AS district_name, " +
                             "city.population AS city_population " +
                             "FROM city " +
-                            "INNER JOIN country ON country.countryCode = city.code " +
-                            "ORDER BY city_name ASC ";
+                            "INNER JOIN country ON city.countryCode = country.code " +
+                            "ORDER BY country_name ASC ";
             // Execute SQL statement
             rset = stmt.executeQuery(strSelect);
 
             // Extract country information
-            ArrayList<city> cities = new ArrayList<city>();
+            ArrayList<nonCity> cities = new ArrayList< >();
             while (rset.next())
             {
-                city cityTable = new city ();
-                cityTable.countryName = rset.getString("country_name");
-                cityTable.name = rset.getString("city_name");
-                cityTable.district = rset.getString("district_name");
-                cityTable.population = rset.getInt("city_population");
+                nonCity cityTable = new nonCity ();
+                cityTable.country_name = rset.getString("country_name");
+                cityTable.city_name = rset.getString("city_name");
+                cityTable.district_name = rset.getString("district_name");
+                cityTable.city_population = rset.getLong("city_population");
                 cities.add(cityTable);
             }
             return cities;
@@ -56,7 +56,7 @@ public class ID38App
      * Prints a list of cities.
      * @param cities The list of cities to print.
      */
-    public void printCities(ArrayList<city> cities)
+    public void printCities(ArrayList<nonCity> cities)
     {
         if (cities == null)
         {
@@ -65,13 +65,13 @@ public class ID38App
             return;
         }
         // Print header
-        System.out.println("A list of all cities with country,district,and population \n");
-        System.out.printf("%-20s\t%-40s\t%-40s\t%-20s", "City Name", "Country Name", "District", "Population");
+        System.out.println("A list of all countries with cities,district,and population \n");
+        System.out.printf("%-20s\t%-40s\t%-40s\t%-20s","Country Name","City Name","District","Population\n");
         // Loop over all countries in the list
-        for (city cf : cities)
+        for (nonCity cf : cities)
         {
             String cf_string =
-                    String.format("%-20s\t%-40s\t%-40s\t%-20s","cf.name,cf.countryName,cf.district,cf.population");
+                    String.format("%-20s\t%-40s\t%-40s\t%-20s",cf.country_name,cf.city_name,cf.district_name,cf.city_population);
             System.out.println(cf_string);
         }
     }

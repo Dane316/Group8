@@ -19,6 +19,11 @@ public class nonCity {
     public String country_name;
 
     /**
+     * District Name
+     */
+    public String district_name;
+
+    /**
      * Country Capital
      */
     public String country_capital;

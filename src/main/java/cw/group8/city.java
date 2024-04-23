@@ -12,12 +12,7 @@ public class city {
      */
     public String countryCode;
 
-    /**
-     * Country Name
-     */
-    public String countryName;
-
-    /**
+     /**
      * District
      */
     public String district;
