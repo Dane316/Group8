@@ -179,10 +179,17 @@ public class App
          ID36.printCountries(ID36.getAllCountryPopulation(con));
         */
 
+        //ID37App Returns a list of all the discticts
+        // and population
+        ID37App ID37 = new ID37App();
+        ID37.printDistricts(ID37.getAllDistrictPopulation(con));
+
+
         //ID38App Returns a list of all the countries in the world
         // with city,district,and population
-        ID38App ID38 = new ID38App();
+        /*ID38App ID38 = new ID38App();
         ID38.printCities(ID38.getAllCityPopulation(con));
+         */
 
 
         a.disconnect(); //call database disconnect function
