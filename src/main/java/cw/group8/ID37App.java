@@ -7,7 +7,7 @@ public class ID37App
 {
 
     /**
-     * As an Organization I want to produce a report on the population of a districk
+     * As an Organization I want to produce a report on the population of a district
      * so that this population information is easy to access.
      * @return A list of all the districts in the world
      * with population or null if there is an error.
