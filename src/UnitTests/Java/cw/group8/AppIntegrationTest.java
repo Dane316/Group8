@@ -2,7 +2,6 @@ package cw.group8;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -34,17 +33,17 @@ public class AppIntegrationTest
     static ID25App app25;
     static ID26App app26;
     static ID27App app27;
-    //static ID28App app28;
-    //static ID29App app29;
+    static ID28App app28;
+    static ID29App app29;
     static ID30App app30;
     static ID31App app31;
     static ID32App app32;
     static ID33App app33;
     static ID34App app34;
     static ID35App app035;
-    //static ID36App app036;
-    //static ID37App app037;
-    //static ID38App app038;
+    static ID36App app036;
+    static ID37App app037;
+    static ID38App app038;
     static ID39App app039;
 
     @BeforeAll
@@ -58,7 +57,7 @@ public class AppIntegrationTest
     void TestGetAllCountriesWorld()
     {
         app08 = new ID08App();
-        ArrayList<country> CountriesWorld= new ArrayList<country>();
+        ArrayList<country> CountriesWorld;
         CountriesWorld=app08.getAllCountriesWorld(con);
 
         for (country IT : CountriesWorld)
@@ -74,7 +73,7 @@ public class AppIntegrationTest
     void TestgetAllCountriesContinent()
     {
         app09 = new ID09App();
-        ArrayList<country> CountriesContinent = new ArrayList<country>();
+        ArrayList<country> CountriesContinent;
         CountriesContinent =app09.getAllCountriesContinent(con);
 
         for (country IT : CountriesContinent)
@@ -89,7 +88,7 @@ public class AppIntegrationTest
     void TestgetAllCountriesRegion()
     {
         app10 = new ID10App();
-        ArrayList<country> CountriesRegion = new ArrayList<country>();
+        ArrayList<country> CountriesRegion;
         CountriesRegion=app10.getAllCountriesRegion(con);
 
         for (country IT : CountriesRegion)
@@ -104,7 +103,7 @@ public class AppIntegrationTest
     void TestgetTopCountriesWorld()
     {
         app11 = new ID11App();
-        ArrayList<country> getTopCountriesWorld = new ArrayList<country>();
+        ArrayList<country> getTopCountriesWorld;
         getTopCountriesWorld=app11.getTopCountriesWorld(con);
 
         for (country IT : getTopCountriesWorld)
@@ -119,7 +118,7 @@ public class AppIntegrationTest
     void TestgetTopCountriesContinent()
     {
         app12 = new ID12App();
-        ArrayList<country> getTopCountriesContinent = new ArrayList<country>();
+        ArrayList<country> getTopCountriesContinent;
         getTopCountriesContinent=app12.getTopCountriesContinent(con);
 
         for (country IT : getTopCountriesContinent)
@@ -134,7 +133,7 @@ public class AppIntegrationTest
     void TestgetTopCountriesRegion()
     {
         app13 = new ID13App();
-        ArrayList<country> getTopCountriesRegion = new ArrayList<country>();
+        ArrayList<country> getTopCountriesRegion;
         getTopCountriesRegion=app13.getTopCountriesRegion(con);
 
         for (country IT : getTopCountriesRegion)
@@ -149,7 +148,7 @@ public class AppIntegrationTest
     void TestgetAllCitiesWorld()
     {
         app14 = new ID14App();
-        ArrayList<city> getAllCitiesWorld = new ArrayList<city>();
+        ArrayList<city> getAllCitiesWorld;
         getAllCitiesWorld=app14.getAllCitiesWorld(con);
 
         for (city IT : getAllCitiesWorld)
@@ -164,7 +163,7 @@ public class AppIntegrationTest
     void TestgetAllCitiesContinentNorthAmerica()
     {
         app15 = new ID15App();
-        ArrayList<city> getAllCitiesContinent = new ArrayList<city>();
+        ArrayList<city> getAllCitiesContinent;
         getAllCitiesContinent=app15.getAllCitiesContinent(con);
 
         for (city IT : getAllCitiesContinent)
@@ -180,7 +179,7 @@ public class AppIntegrationTest
     void TestgetAllCitiesRegionCaribbean()
     {
         app16 = new ID16App();
-        ArrayList<city> getAllCitiesRegion = new ArrayList<city>();
+        ArrayList<city> getAllCitiesRegion;
         getAllCitiesRegion=app16.getAllCitiesRegion(con);
 
         for (city IT : getAllCitiesRegion)
@@ -196,7 +195,7 @@ public class AppIntegrationTest
     void TestgetAllCitiesCountry()
     {
         app17 = new ID17App();
-        ArrayList<city> getAllCitiesCountry = new ArrayList<city>();
+        ArrayList<city> getAllCitiesCountry;
         getAllCitiesCountry=app17.getAllCitiesCountry(con);
 
         for (city IT : getAllCitiesCountry)
@@ -212,7 +211,7 @@ public class AppIntegrationTest
     void TestgetAllCitiesDistrict()
     {
         app18 = new ID18App();
-        ArrayList<city> getAllCitiesDistrict = new ArrayList<city>();
+        ArrayList<city> getAllCitiesDistrict;
         getAllCitiesDistrict=app18.getAllCitiesDistrict(con);
 
         for (city IT : getAllCitiesDistrict)
@@ -228,7 +227,7 @@ public class AppIntegrationTest
     void TestgetTopCitiesWorld()
     {
         app19 = new ID19App();
-        ArrayList<city> getTopCitiesWorld = new ArrayList<city>();
+        ArrayList<city> getTopCitiesWorld ;
         getTopCitiesWorld=app19.getTopCitiesWorld(con);
 
         for (city IT : getTopCitiesWorld)
@@ -244,7 +243,7 @@ public class AppIntegrationTest
     void TestgetTopCitiesContinent()
     {
         app20 = new ID20App();
-        ArrayList<city> getTopCitiesContinent = new ArrayList<city>();
+        ArrayList<city> getTopCitiesContinent;
         getTopCitiesContinent=app20.getTopCitiesContinent(con);
 
         for (city IT : getTopCitiesContinent)
@@ -260,7 +259,7 @@ public class AppIntegrationTest
     void TestgetTopCitiesRegion()
     {
         app21 = new ID21App();
-        ArrayList<city> getTopCitiesRegion = new ArrayList<city>();
+        ArrayList<city> getTopCitiesRegion;
         getTopCitiesRegion=app21.getTopCitiesRegion(con);
 
         for (city IT : getTopCitiesRegion)
@@ -276,7 +275,7 @@ public class AppIntegrationTest
     void TestgetTopCitiesCountry()
     {
         app22 = new ID22App();
-        ArrayList<city> getTopCitiesCountry = new ArrayList<city>();
+        ArrayList<city> getTopCitiesCountry;
         getTopCitiesCountry=app22.getTopCitiesCountry(con);
 
         for (city IT : getTopCitiesCountry)
@@ -292,7 +291,7 @@ public class AppIntegrationTest
     void TestgetTopCitiesDistrict()
     {
         app23 = new ID23App();
-        ArrayList<city> getTopCitiesDistrict = new ArrayList<city>();
+        ArrayList<city> getTopCitiesDistrict;
         getTopCitiesDistrict=app23.getTopCitiesDistrict(con);
 
         for (city IT : getTopCitiesDistrict)
@@ -308,7 +307,7 @@ public class AppIntegrationTest
     void TestgetAllCities()
     {
         app24 = new ID24App();
-        ArrayList<city> getAllCities = new ArrayList<city>();
+        ArrayList<city> getAllCities;
         getAllCities=app24.getAllCities(con);
 
         for (city IT : getAllCities)
@@ -324,7 +323,7 @@ public class AppIntegrationTest
     void TestgetAllCitiesContinent()
     {
         app25 = new ID25App();
-        ArrayList<city> getAllCitiesContinent = new ArrayList<city>();
+        ArrayList<city> getAllCitiesContinent;
         getAllCitiesContinent=app25.getAllCitiesContinent(con);
 
         for (city IT : getAllCitiesContinent)
@@ -340,7 +339,7 @@ public class AppIntegrationTest
     void TestgetAllCitiesRegion()
     {
         app26 = new ID26App();
-        ArrayList<city> getAllCitiesRegion = new ArrayList<city>();
+        ArrayList<city> getAllCitiesRegion;
         getAllCitiesRegion=app26.getAllCitiesRegion(con);
 
         for (city IT : getAllCitiesRegion)
@@ -356,7 +355,7 @@ public class AppIntegrationTest
     void TestgetTopNAllCities()
     {
         app27 = new ID27App();
-        ArrayList<city> getAllCities = new ArrayList<city>();
+        ArrayList<city> getAllCities;
         getAllCities=app27.getAllCities(con);
 
         for (city IT : getAllCities)
@@ -366,6 +365,39 @@ public class AppIntegrationTest
             break;
         }
     }//end TestgetTopNAllCities
+
+
+    @Test
+    void TestTopCapitalCityPopulation()
+    {
+        app28 = new ID28App();
+        ArrayList<nonCity> getTopCapitalCityPopulation;
+        getTopCapitalCityPopulation=app28.getTopCapitalCityPopulation(con);
+
+        for (nonCity IT : getTopCapitalCityPopulation)
+        {
+            assertEquals(IT.country_capital,"Cairo");
+            assertEquals(IT.city_population, 6789479);
+            break;
+        }
+    }//end TestTopCapitalCityPopulation
+
+
+    @Test
+    void TestTopCapitalCityPopulationCaribbean()
+    {
+        app29 = new ID29App();
+        ArrayList<nonCity> getTopCapitalCityPopulation;
+        getTopCapitalCityPopulation=app29.getTopCapitalCityPopulation(con);
+
+        for (nonCity IT : getTopCapitalCityPopulation)
+        {
+            assertEquals(IT.country_region,"Caribbean");
+            assertEquals(IT.country_capital,"La Habana");
+            assertEquals(IT.city_population,2256000);
+            break;
+        }
+    }//end TestTopCapitalCityPopulationCaribbean
 
 
     @Test
@@ -385,19 +417,19 @@ public class AppIntegrationTest
     }//end TestgetContinentPopulation
 
 
-    /*
+
     @Test
     void TestgetCityPopulation()
     {
         app31 = new ID31App();
-        ArrayList<nonCity> getCityPopulation = new ArrayList<nonCity>();
+        ArrayList<nonCity> getCityPopulation;
         getCityPopulation=app31.getCityPopulation(con);
 
         for (nonCity IT : getCityPopulation)
         {
-            assertEquals(IT.continent_name,"Australia and New Zealand");
+            assertEquals(IT.country_region,"Australia and New Zealand");
             assertEquals(IT.city_population, 13163436);
-            assertEquals(IT.non_city_population, 286884264);
+            assertEquals(IT.non_city_population, 286004264);
             break;
         }
     }//end TestgetCityPopulation
@@ -413,14 +445,14 @@ public class AppIntegrationTest
 
         for (nonCity IT : getCountryPopulation)
         {
-            assertEquals(IT.continent_name,"Afghanistan");
+            assertEquals(IT.country_name,"Afghanistan");
             assertEquals(IT.city_population, 2332100);
-            assertEquals(IT.non_city_population, 88547988);
+            assertEquals(IT.non_city_population, 88547900);
             break;
         }
     }//end TestgetCountryPopulation
 
- */
+
 
     @Test
     void TestgetWorldPopulation()
@@ -429,7 +461,7 @@ public class AppIntegrationTest
         long world_population;
         world_population= app33.getWorldPopulation(con);
 
-            assertEquals(world_population,6078749450l);
+        assertEquals(world_population,6078749450l);
 
     }//end TestgetWorldPopulation
 
@@ -445,6 +477,24 @@ public class AppIntegrationTest
 
     }//end TestgetContinentPopulationSouthAmerica
 
+
+    @Test
+    void TestgetLanguage()
+    {
+        app039 = new ID39App();
+        ArrayList<language> getCountryPopulation;
+        getCountryPopulation= app039.getLanguage(con);
+
+        for (language IT : getCountryPopulation)
+        {
+            assertEquals(IT.language_name,"Chinese");
+            long total=IT.total_speakers;
+            assertEquals(total, 1968263000l);
+            assertEquals(IT.percentage.doubleValue(), 32.38d);
+            break;
+        }
+
+    }//end getLanguage
 
 
 
