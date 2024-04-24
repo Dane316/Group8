@@ -145,12 +145,21 @@ public class App
         ID34App ID34 = new ID34App();
         ID34.printTotalPopulation(ID34.getContinentPopulation(con));
         */
+
+        //ID29App Returns a list of Top Population by City Capitals in a Continent
+
+        ID28App ID28 = new ID28App();
+        ID28.printTopCapitals (ID28.getTopCapitalCityPopulation(con));
+
+
         //ID29App Returns a list of Top Population by City Capitals in a Region
 
-        ID29App ID29 = new ID29App();
+        /*ID29App ID29 = new ID29App();
         ID29.printTopCapitals (ID29.getTopCapitalCityPopulation(con));
+        */
 
-        /*// ID30 Get City and Non-City Population by Continent
+        /*
+        // ID30 Get City and Non-City Population by Continent
 
        ID30App ID30 = new ID30App();
        ID30.printPopulation(ID30.getContinentPopulation(con));
