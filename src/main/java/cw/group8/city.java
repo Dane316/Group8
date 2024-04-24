@@ -7,11 +7,6 @@ public class city {
      */
     public String name;
 
-    /**
-     * Country Code
-     */
-    public String countryCode;
-
      /**
      * District
      */
