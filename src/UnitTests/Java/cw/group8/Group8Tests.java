@@ -134,10 +134,7 @@ public class Group8Tests
 
     //Unit testing for Issue ID 24
     @Test
-    void ID24AppGetAllCitiesTestNull()
-    {
-        app24.getAllCities(null);
-    }
+    void ID24AppGetAllCitiesTestNull() {app24.getAllCities(null);}
     @Test
     void ID24AppPrintCitiesTestNull() {app24.printCities(null); }
 
