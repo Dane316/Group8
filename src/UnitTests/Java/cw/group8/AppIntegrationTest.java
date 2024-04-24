@@ -404,7 +404,7 @@ public class AppIntegrationTest
     void TestgetContinentPopulation()
     {
         app30 = new ID30App();
-        ArrayList<nonCity> getContinentPopulation = new ArrayList<nonCity>();
+        ArrayList<nonCity> getContinentPopulation;
         getContinentPopulation=app30.getContinentPopulation(con);
 
         for (nonCity IT : getContinentPopulation)
@@ -440,7 +440,7 @@ public class AppIntegrationTest
     void TestgetCountryPopulation()
     {
         app32 = new ID32App();
-        ArrayList<nonCity> getCountryPopulation = new ArrayList<nonCity>();
+        ArrayList<nonCity> getCountryPopulation;
         getCountryPopulation= app32.getCountryPopulation(con);
 
         for (nonCity IT : getCountryPopulation)
@@ -493,6 +493,7 @@ public class AppIntegrationTest
             assertEquals(IT.percentage.doubleValue(), 32.38d);
             break;
         }
+        disconnect();
 
     }//end getLanguage
 
