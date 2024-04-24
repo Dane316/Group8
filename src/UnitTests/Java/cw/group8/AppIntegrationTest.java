@@ -493,7 +493,6 @@ public class AppIntegrationTest
             assertEquals(IT.percentage.doubleValue(), 32.38d);
             break;
         }
-        disconnect();
 
     }//end getLanguage
 
