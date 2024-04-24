@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.sql.*;
 
+import static java.lang.System.*;
 
 
 /**
@@ -43,8 +44,8 @@ public class ID27App {
         }
         catch (Exception e)
         {
-            System.out.println(e.getMessage());
-            System.out.println("Failed to get Capital City details");
+            out.println(e.getMessage());
+            out.println("Failed to get Capital City details");
             return null;
         }
     }
@@ -57,20 +58,20 @@ public class ID27App {
         // check cities array is not null
         if (cities == null)
         {
-            System.out.println("No Capital Cities Found");
+            out.println("No Capital Cities Found");
             return;
         }
 
         // Print header
-        System.out.printf("Top N (10) Populated Capital Cities in the world");
-        System.out.printf("%-10s %-15s%n", "Capital City Name", "Population");
+        out.printf("Top N (10) Populated Capital Cities in the world");
+        out.printf("%-10s %-15s%n", "Capital City Name", "Population");
         // Loop over all countries in the list
         for (city city_population : cities)
         {
             String capital_cities_string =
                     String.format("%-10s %-15s",
                             city_population.name, city_population.population);
-            System.out.println(capital_cities_string);
+            out.println(capital_cities_string);
         }
     }//end printCities
 

@@ -3,6 +3,8 @@ package cw.group8;
 import java.sql.*;
 import java.util.ArrayList;
 
+import static java.lang.System.*;
+
 /**
  * As an Organization I want to produce a report on the population of people, people
  * living in cities, and people not living in cities in each continent so that this population
@@ -45,7 +47,7 @@ public class ID30App {
             return continentPopulation;
         }
         catch(Exception e){
-            System.out.println("Error in running SQL"+e.getMessage());
+            out.println("Error in running SQL"+e.getMessage());
             return null;
         }
 
@@ -57,15 +59,15 @@ public class ID30App {
         // check continentPopulation array is not null
         if (continentPopulation == null)
         {
-            System.out.println("No Continent Population Found from this Query");
-            System.out.println("Query needs revisions");
+            out.println("No Continent Population Found from this Query");
+            out.println("Query needs revisions");
             return;
         }
-        System.out.println(String.format("%-30s\t%20s\t%20s", "Continent", "City Population", "Non-City Population"));
+        out.println(String.format("%-30s\t%20s\t%20s", "Continent", "City Population", "Non-City Population"));
         for (nonCity nc : continentPopulation) {
             String printContinent =
                     String.format("%-30s\t%20s\t%20s",nc.continent_name,nc.city_population,nc.non_city_population);
-            System.out.println(printContinent);
+            out.println(printContinent);
         }
 
 

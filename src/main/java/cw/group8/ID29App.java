@@ -5,6 +5,8 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import static java.lang.System.*;
+
 public class ID29App
 {
 
@@ -52,8 +54,8 @@ public class ID29App
         }
         catch (Exception e)
         {
-            System.out.println(e.getMessage());
-            System.out.println("Failed to get district details");
+            out.println(e.getMessage());
+            out.println("Failed to get district details");
             return null;
         }
     }
@@ -64,19 +66,19 @@ public class ID29App
     {
         if (top == null)
         {
-            System.out.println("No Population Data Found from this Query\n");
-            System.out.println("Query needs revisions");
+            out.println("No Population Data Found from this Query\n");
+            out.println("Query needs revisions");
             return;
         }
         // Print header
-        System.out.println("Top 10 Populated Capitals in the Caribbean");
-        System.out.printf("%-40s %-40s %-20s\n","Region Name" ,"Capital Name" ,"Population");
+        out.println("Top 10 Populated Capitals in the Caribbean");
+        out.printf("%-40s %-40s %-20s\n","Region Name" ,"Capital Name" ,"Population");
         // Loop over all districts in the list
         for (nonCity cf : top)
         {
             String cf_string =
                     String.format("%-40s %-40s %-20s\n",cf.country_region,cf.country_capital,cf.city_population);
-            System.out.println(cf_string);
+            out.println(cf_string);
         }
     }
 }

@@ -4,6 +4,8 @@ import java.sql.ResultSet;
 import java.sql.*;
 import java.util.ArrayList;
 
+import static java.lang.System.*;
+
 
 /**
  * As an Organization I want to produce a report on the number of people who
@@ -54,8 +56,8 @@ public class ID39App {
         }
         catch (Exception e)
         {
-            System.out.println(e.getMessage());
-            System.out.println("Failed to get language details");
+            out.println(e.getMessage());
+            out.println("Failed to get language details");
             return null;
         }
     }//end getLanguage
@@ -69,19 +71,19 @@ public class ID39App {
         // check total if 0
         if (world_languages == null)
         {
-            System.out.println("Failed to get language details");
+            out.println("Failed to get language details");
             return;
         }
 
         // Print header
-        System.out.printf("People who speak Chinese, English, Hindi, Spanish and Arabic \n" +
+        out.printf("People who speak Chinese, English, Hindi, Spanish and Arabic \n" +
                         "%-10s %-15s %-25s%n", "Language", "Total", "Percentage");
         // Loop over all language details in the list
         for (language five_languages : world_languages)
         {
             String language_string =
                     String.format("%-10s %-15s %-25f",five_languages.language_name, five_languages.total_speakers, five_languages.percentage);
-            System.out.println(language_string);
+            out.println(language_string);
         }
     }//end printLanguageDetails
 

@@ -3,6 +3,8 @@ package cw.group8;
 import java.sql.ResultSet;
 import java.sql.*;
 
+import static java.lang.System.*;
+
 
 /**
  *As an Organization I want to produce a report on the population
@@ -36,8 +38,8 @@ public class ID34App {
         }
         catch (Exception e)
         {
-            System.out.println(e.getMessage());
-            System.out.println("Failed to get Continent Population details");
+            out.println(e.getMessage());
+            out.println("Failed to get Continent Population details");
             return 0;
         }
     }
@@ -50,13 +52,13 @@ public class ID34App {
         // check total if 0
         if (total == 0)
         {
-            System.out.println("Failed to get continent Population details");
+            out.println("Failed to get continent Population details");
             return;
         }
 
         // Print header
-        System.out.printf("Population for South America continent :");
-        System.out.println(total);
+        out.printf("Population for South America continent :");
+        out.println(total);
     }//end printTotalPopulation
 
 }//end ID34App

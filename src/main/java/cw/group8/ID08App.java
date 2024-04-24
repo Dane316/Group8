@@ -3,6 +3,8 @@ package cw.group8;
 import java.sql.*;
 import java.util.ArrayList;
 
+import static java.lang.System.*;
+
 public class ID08App
 {
     
@@ -35,8 +37,8 @@ public class ID08App
         }
         catch (Exception e)
         {
-            System.out.println(e.getMessage());
-            System.out.println("Failed to get country details");
+            out.println(e.getMessage());
+            out.println("Failed to get country details");
             return null;
         }
     }
@@ -47,15 +49,15 @@ public class ID08App
     public void printCountries(ArrayList<country> countries)
     {
         // Print header
-        System.out.printf("All the countries in the world organised by largest population to smallest.");
-        System.out.printf("%-10s %-15s%n","Name", "Population");
+        out.printf("All the countries in the world organised by largest population to smallest.");
+        out.printf("%-10s %-15s%n","Name", "Population");
         // Loop over all countries in the list
         for (country emp : countries)
         {
             String emp_string =
                     String.format("%-10s %-15s",
                             emp.name, emp.population);
-            System.out.println(emp_string);
+            out.println(emp_string);
         }
     }
 }

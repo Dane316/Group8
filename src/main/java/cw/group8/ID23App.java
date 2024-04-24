@@ -3,6 +3,8 @@ package cw.group8;
 import java.sql.*;
 import java.util.ArrayList;
 
+import static java.lang.System.*;
+
 public class ID23App
 {
     /** ID 23
@@ -38,8 +40,8 @@ public class ID23App
         }
         catch (Exception e)
         {
-            System.out.println(e.getMessage());
-            System.out.println("Failed to get city details");
+            out.println(e.getMessage());
+            out.println("Failed to get city details");
             return null;
         }
     }
@@ -50,15 +52,15 @@ public class ID23App
     public void printCities(ArrayList<city> cities)
     {
         // Print header
-        System.out.printf("The top 10 populated cities in the district of Texas by largest population to smallest.\n");
-        System.out.printf("%-10s %-15s%n","Name", "Population");
+        out.printf("The top 10 populated cities in the district of Texas by largest population to smallest.\n");
+        out.printf("%-10s %-15s%n","Name", "Population");
         // Loop over all cities in the list
         for (city emp : cities)
         {
             String emp_string =
                     String.format("%-10s %-15s",
                             emp.name, emp.population);
-            System.out.println(emp_string);
+            out.println(emp_string);
         }
     }
 }

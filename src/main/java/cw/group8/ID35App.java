@@ -4,6 +4,8 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.sql.*;
 
+import static java.lang.System.*;
+
 
 /**
  * As an Organization I want to produce a report on the population of a region
@@ -37,8 +39,8 @@ public class ID35App {
         }
         catch (Exception e)
         {
-            System.out.println(e.getMessage());
-            System.out.println("Failed to get Region Population details");
+            out.println(e.getMessage());
+            out.println("Failed to get Region Population details");
             return 0;
         }
     }
@@ -51,13 +53,13 @@ public class ID35App {
         // check total if 0
         if (total == 0)
         {
-            System.out.println("Failed to get Region Population details");
+            out.println("Failed to get Region Population details");
             return;
         }
 
         // Print header
-        System.out.printf("Population for Caribbean Region :");
-        System.out.println(total);
+        out.printf("Population for Caribbean Region :");
+        out.println(total);
     }//end printTotalPopulation
 
 }//end ID35App

@@ -30,6 +30,9 @@ public class Group8Tests
     static ID33App app33;
     static ID34App app34;
     static ID35App app35;
+    static ID36App app36;
+    static ID37App app37;
+    static ID38App app38;
     static ID39App app39;
 
     @BeforeAll
@@ -59,6 +62,9 @@ public class Group8Tests
         app33 = new ID33App();
         app34 = new ID34App();
         app35 = new ID35App();
+        app36 = new ID36App();
+        app37 = new ID37App();
+        app38 = new ID38App();
         app39 = new ID39App();
     }
 
@@ -180,11 +186,32 @@ public class Group8Tests
     @Test
     void ID34AppPrintCitiesTestNull() {app34.printTotalPopulation(0); }
 
+    //Unit testing for Issue ID 35
     @Test
-    void ID34AppGetRegionPopulationTestNull() {app35.getRegionPopulation(null); }
+    void ID35AppGetRegionPopulationTestNull() {app35.getRegionPopulation(null); }
     @Test
-    void ID34AppPrintTotalPopulationTestNull() {app35.printTotalPopulation(0); }
+    void ID35AppPrintTotalPopulationTestNull() {app35.printTotalPopulation(0); }
 
+    //Unit testing for Issue ID 36
+    @Test
+    void ID36AppGetRegionPopulationTestNull() {app36.getAllCountryPopulation(null); }
+    @Test
+    void ID36AppPrintTotalPopulationTestNull() {app36.printCountries(null); }
+
+    //Unit testing for Issue ID 37
+    @Test
+    void ID37AppGetRegionPopulationTestNull() {app37.getAllDistrictPopulation(null);}
+    @Test
+    void ID37AppPrintTotalPopulationTestNull() {app37.printDistricts(null);}
+
+    //Unit testing for Issue ID 38
+    @Test
+    void ID38AppGetRegionPopulationTestNull() {app38.getAllCityPopulation(null);}
+    @Test
+    void ID38AppPrintTotalPopulationTestNull() {app38.printCities(null);}
+
+
+    //Unit testing for Issue ID 39
     @Test
     void ID39AppGetRegionPopulationTestNull() {app39.getLanguage(null); }
     @Test

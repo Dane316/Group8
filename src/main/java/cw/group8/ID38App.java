@@ -3,6 +3,8 @@ package cw.group8;
 import java.sql.*;
 import java.util.ArrayList;
 
+import static java.lang.System.*;
+
 public class ID38App
 {
 
@@ -47,8 +49,8 @@ public class ID38App
         }
         catch (Exception e)
         {
-            System.out.println(e.getMessage());
-            System.out.println("Failed to get country details");
+            out.println(e.getMessage());
+            out.println("Failed to get country details");
             return null;
         }
     }
@@ -60,19 +62,19 @@ public class ID38App
     {
         if (cities == null)
         {
-            System.out.println("No City/Population Found from this Query\n");
-            System.out.println("Query needs revisions");
+            out.println("No City/Population Found from this Query\n");
+            out.println("Query needs revisions");
             return;
         }
         // Print header
-        System.out.println("A list of all countries with cities,district,and population \n");
-        System.out.printf("%-20s\t%-40s\t%-40s\t%-20s","Country Name","City Name","District","Population\n");
+        out.println("A list of all countries with cities,district,and population \n");
+        out.printf("%-20s\t%-40s\t%-40s\t%-20s","Country Name","City Name","District","Population\n");
         // Loop over all countries in the list
         for (nonCity cf : cities)
         {
             String cf_string =
                     String.format("%-20s\t%-40s\t%-40s\t%-20s",cf.country_name,cf.city_name,cf.district_name,cf.city_population);
-            System.out.println(cf_string);
+            out.println(cf_string);
         }
     }
 }
