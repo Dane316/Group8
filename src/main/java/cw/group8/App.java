@@ -145,6 +145,10 @@ public class App
         ID34App ID34 = new ID34App();
         ID34.printTotalPopulation(ID34.getContinentPopulation(con));
         */
+        //ID29App Returns a list of Top Population by City Capitals in a Region
+
+        ID29App ID29 = new ID29App();
+        ID29.printTopCapitals (ID29.getTopCapitalCityPopulation(con));
 
         /*// ID30 Get City and Non-City Population by Continent
 
@@ -181,9 +185,9 @@ public class App
 
         //ID37App Returns a list of all the discticts
         // and population
-        ID37App ID37 = new ID37App();
+        /*ID37App ID37 = new ID37App();
         ID37.printDistricts(ID37.getAllDistrictPopulation(con));
-
+        */
 
         //ID38App Returns a list of all the countries in the world
         // with city,district,and population
