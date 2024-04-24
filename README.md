@@ -16,7 +16,7 @@
 * Release [![Releases](https://img.shields.io/github/release/Dane316/Group8/all.svg?style=flat-square)](https://github.com/Dane316/Group8/releases)
  
 ## Details for Requirements Met
-28 requirements of 32 have been implemented, which is 87.5%.
+32 requirements of 32 have been implemented, which is 100%.
 
 
 ### User Stories
