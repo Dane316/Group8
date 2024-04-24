@@ -3,7 +3,7 @@ package cw.group8;
 public class city {
 
     /**
-     * Name
+     * City Name
      */
     public String name;
 
@@ -12,7 +12,7 @@ public class city {
      */
     public String countryCode;
 
-    /**
+     /**
      * District
      */
     public String district;
